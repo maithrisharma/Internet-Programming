@@ -1,0 +1,28 @@
+{
+    "schema": "https://json-schema.org/draft-04/schema#",
+    "title": "Receipes",
+    "description": "A list of Receipes",
+    "type": "object",
+        "properties":{
+            "receipes": {
+                "items": {
+                    "type": "object",
+                        "properties": {
+                            "id" : { "type": "integer"},
+                            "name": { "type": "string" },
+                            "prep": { "type": "string"},
+                            "cook": { "type": "string"},
+                            "serves": { "type": "integer"},
+                            "desc": { "type": "string"},
+                            "ingredients": { "type": "array",
+                                "items": {
+                                     "type": "string"
+                                    
+                                }
+                            },
+                            "observations": { "type": "string"}
+                        }
+                }
+            }
+        }
+}
