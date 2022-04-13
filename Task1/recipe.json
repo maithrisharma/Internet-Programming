@@ -651,6 +651,42 @@
             "method":[
                 "Scoop the seeds from one of the passion fruits into the glass of a cocktail shaker, add the vodka, passoa, lime juice and sugar syrup. Add a handful of ice and shake well, strain into 2 martini glasses, top up with prosecco, then add half a passion fruit to each. Serve immediately."
             ] 
+        },
+        {
+            "id":19,
+            "name":"Vegan Christmas pudding",
+            "prep":"30 mins",
+            "cook":"180 mins",
+            "serves": 14,
+            "ratings": 13,
+            "desc": "Make this vegan Christmas pudding as part of a festive feast, packed with dried figs, raisins, sultanas and a tot of rum. Serve warm with vegan ice cream",
+            "ingredients":[
+                "125g dairy-free margarine, plus extra for greasing the bowl and paper",
+                "375g dried figs",
+                "75ml rum",
+                "350g mixed sultanas and raisins",
+                "1 large eating apple, peeled, cored and grated",
+                "85g light brown soft sugar",
+                "85g dark brown soft sugar",
+                "100g breadcrumbs",
+                "100g self-raising flour",
+                "½ tbsp allspice"
+            ],
+            "nutrition":{
+                "kcal":289,
+                "fat":"6g",
+                "saturates":"1g",
+                "carbs":"50g",
+                "sugars":"42g",
+                "fibre":"4g",
+                "protein":"3g",
+                "salt":"0.3g"
+            },
+            "method":[
+                "Grease a 2-litre pudding bowl with dairy-free margarine, then line the base with a circle of baking parchment. Grease a large sheet of baking parchment, then lay it on top of a large sheet of foil, margarine side up. Fold a pleat in the middle of each sheet.",
+                "Roughly chop 125g of the figs and set aside. Put the remaining figs, the dairy-free margarine and the rum into a large food processor and whizz until smooth-ish, then scrape into a large mixing bowl. Tip in the chopped figs, sultanas, raisins, grated apple, sugars, breadcrumbs, flour and allspice. Stir everything together, then spoon into your pudding basin.",
+                "Cover with the buttered paper-foil sheet, tie with string and trim. Lower into a large saucepan, with upturned saucers or scrunched-up bits of foil in the bottom (so the pud doesn’t touch the bottom), then fill the pan with enough boiling water from the kettle to come halfway up the sides of the bowl. Cover with a lid and simmer for 3 hrs, topping up the water as needed. Remove and leave to cool. Will keep in a cool, dry cupboard for up to a year."
+            ] 
         }
     ]
 }
