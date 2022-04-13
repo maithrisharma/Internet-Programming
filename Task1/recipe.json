@@ -621,6 +621,36 @@
                 "Heat the oil in a large frying pan and fry the onion for 8 mins until translucent. Add the garlic and fry for 1 min. Turn the heat to medium-high, add the aubergines and fry for 5 mins until golden. Stir in the courgettes and peppers and fry for 5 mins more until slightly soft. Add the tomato purée, fresh tomatoes, herbs, canned tomatoes, vinegar, sugar and 1 tsp salt and bring to the boil.", 
                 "Transfer to the slow cooker and cook on low for 5-6 hours or until everything is soft and the sauce has thickened. Season, scatter over some extra basil, and serve with sourdough, if you like."
             ] 
+        },
+        {
+            "id":18,
+            "name":"Passion fruit martini",
+            "prep":"5 mins",
+            "cook":"0 mins",
+            "serves": 2,
+            "ratings": 17,
+            "desc": "This easy passion fruit cocktail is bursting with zingy flavours and is perfect for celebrating with friends. Top with prosecco for a special drink",
+            "ingredients":[
+                "2 ripe passion fruits (they should have a crinkly appearance), halved",
+                "60ml vanilla vodka",
+                "30ml passoa",
+                "1 tbsp lime juice",
+                "1 tbsp sugar syrup",
+                "prosecco , to serve"
+            ],
+            "nutrition":{
+                "kcal":224,
+                "fat":"0g",
+                "saturates":"0g",
+                "carbs":"16g",
+                "sugars":"16g",
+                "fibre":"2g",
+                "protein":"1g",
+                "salt":"0.03g"
+            },
+            "method":[
+                "Scoop the seeds from one of the passion fruits into the glass of a cocktail shaker, add the vodka, passoa, lime juice and sugar syrup. Add a handful of ice and shake well, strain into 2 martini glasses, top up with prosecco, then add half a passion fruit to each. Serve immediately."
+            ] 
         }
     ]
 }
