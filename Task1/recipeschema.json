@@ -34,6 +34,13 @@
                                     "protein":  { "type": "string"},
                                     "salt":  { "type": "string"}
                                 }
+                            },
+                            "method": { 
+                                "type": "array",
+                                "items": {
+                                     "type": "string"
+                                    
+                                }
                             }
                         }
                 }
