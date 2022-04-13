@@ -188,6 +188,42 @@
                 "While the cakes are cooling, make the buttercream by beating together the icing sugar, butter and vanilla until pale and fluffy. Mix in the extra milk if the icing feels too stiff.",
                 "Once the cakes are cool, use a sharp knife to slice off the tops, then cut the tops in half. Pipe or spread the buttercream on top of the cakes, then gently push two semi-circular halves into the buttercream on each cake, doing this at an angle to look like butterfly wings. You can serve the cupcakes at this stage, or decorate them with a little blob of jam in the centre and a scattering of sprinkles, if you like."
             ] 
+        },
+        {
+            "id":6,
+            "name":"Haddock & leek au gratin with sweetcorn mash",
+            "prep":"10 mins",
+            "cook":"50 mins",
+            "serves": 2,
+            "ratings": 13,
+            "desc": "Leek and spinach are layered up with white fish fillets and cheese sauce then topped with golden mash in this delicious, low-fat oven bake.",
+            "ingredients":[
+                "350g potatoes , quartered",
+                "195g can sweetcorn in water",
+                "240g bag ready-washed spinach",
+                "2 leeks , thickly sliced",
+                "300ml skimmed milk , plus 3 tbsp",
+                "15g unsalted butter",
+                "15g plain flour",
+                "½ tsp English mustard",
+                "75g mature reduced-fat cheese , grated",
+                "2 x 125g fillets of skinless haddock"
+            ],
+            "nutrition":{
+                "kcal":618,
+                "fat":"13g",
+                "saturates":"6g",
+                "carbs":"70g",
+                "sugars":"20g",
+                "fibre":"11g",
+                "protein":"50g",
+                "salt":"2.1g"
+            },
+            "method":[
+                "Heat oven to 200C/180 fan/gas 6. Boil the potatoes for 15-20 mins until tender, then drain. Reserve 3 tbsp corn and blitz the rest (with its juice) using a hand blender or a food processor until completely smooth, then mash into the potatoes. Cook the spinach following pack instructions – if you have a microwave, choose this method.",
+                "Put the leeks in a pan with the 300ml milk and the butter. Cook gently, part-covered, for 8 mins until the leeks are tender. (Keep an eye on things as milk can easily boil over.) Mix the 3 tbsp milk with the flour and mustard, then stir into the leek mixture – keep stirring until thickened. Take off the heat and stir in three-quarters of the cheese.",
+                "Squeeze as much liquid as you can from the spinach, then arrange on the base of 2 gratin dishes. Place a fish fillet on top of each, then spoon over the leek & cheese sauce. Top with the sweetcorn mash. Mix the remaining corn and cheese, and scatter on top. Place the dishes on a baking tray and cook for 25 mins until the fish flakes when tested and the top is golden."
+            ] 
         }
     ]
 }
