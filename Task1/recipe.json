@@ -43,6 +43,48 @@
             "serves": 4,
             "desc": "This French bistro classic is easy to make at home and fabulous with creamy mash or crusty bread",
             "ingredients":[
+                "1kg silverside or topside of beef with no added fat",
+                "2 tbsp olive oil",
+                "8 young carrots, tops trimmed (but leave a little, if you like)",
+                "1 celery stick, finely chopped",
+                "200ml white wine",
+                "600ml rich beef stock",
+                "2 bay leaves",
+                "500g onion",
+                "a few thyme sprigs",
+                "1 tsp butter",
+                "1 tsp light brown or light muscovado sugar",
+                "2 tsp plain flour"
+            ],
+            "nutrition":{
+                "kcal":487,
+                "fat":"17g",
+                "saturates":"5g",
+                "carbs":"19g",
+                "sugars":"15g",
+                "fibre":"5g",
+                "protein":"6g",
+                "salt":"1g"
+            },
+            "method":[
+                "Heat 1 tsp olive oil and half of the 25g butter in a large lidded casserole.",
+                "Season 4 chicken legs, then fry for about 5 mins on each side until golden brown. Remove and set aside.",
+                "Melt the remaining butter in the pan. Add 1 chopped onion, then fry for about 5 mins until soft.",
+                "Add 2 crushed garlic cloves, cook for about 1 min, add 200g small button or chestnut mushrooms, cook for 2 mins, then add 225ml red wine.",
+                "Stir in 2 tbsp tomato purée, let the liquid bubble and reduce for about 5 mins, then stir in 2 thyme sprigs and pour over 500ml chicken stock.",
+                "Slip the chicken legs back into the pan, then cover and simmer on a low heat for about 1 hr until the chicken is very tender.",
+                "Remove the chicken legs from the pan and keep warm. Rapidly boil down the sauce for 10 mins or so until it is syrupy and the flavour has concentrated.",
+                "Put the chicken legs back into the sauce and serve."
+            ] 
+        },
+        {
+            "id":3,
+            "name":"Pot-roast beef with French onion gravy",
+            "prep":"15 mins",
+            "cook":"135 mins",
+            "serves": 4,
+            "desc": "Silverside and topside are cheaper and leaner cuts of meat, well-suited to slow-cooking. The stock and juices make a great sauce when combined with caramelised onions",
+            "ingredients":[
                 "1 tsp olive oil",
                 "25g butter",
                 "4 chicken legs",
@@ -65,14 +107,10 @@
                 "salt":"1.11g"
             },
             "method":[
-                "Heat 1 tsp olive oil and half of the 25g butter in a large lidded casserole.",
-                "Season 4 chicken legs, then fry for about 5 mins on each side until golden brown. Remove and set aside.",
-                "Melt the remaining butter in the pan. Add 1 chopped onion, then fry for about 5 mins until soft.",
-                "Add 2 crushed garlic cloves, cook for about 1 min, add 200g small button or chestnut mushrooms, cook for 2 mins, then add 225ml red wine.",
-                "Stir in 2 tbsp tomato purée, let the liquid bubble and reduce for about 5 mins, then stir in 2 thyme sprigs and pour over 500ml chicken stock.",
-                "Slip the chicken legs back into the pan, then cover and simmer on a low heat for about 1 hr until the chicken is very tender.",
-                "Remove the chicken legs from the pan and keep warm. Rapidly boil down the sauce for 10 mins or so until it is syrupy and the flavour has concentrated.",
-                "Put the chicken legs back into the sauce and serve."
+                "Heat oven to 160C/140C fan/gas 3. Rub the meat with 1 tsp of the oil and plenty of seasoning. Heat a large flameproof casserole dish and brown the meat all over for about 10 mins. Meanwhile, add 2 tsp oil to a frying pan and fry the carrots and celery for 10 mins until turning golden.",
+                "Lift the beef onto a plate, splash the wine into the hot casserole and boil for 2 mins. Pour in the stock, return the beef, then tuck in the carrots, celery and bay leaves, trying not to submerge the carrots too much. Cover and cook in the oven for 2 hrs. (I like to turn the beef halfway through cooking.)",
+                "Meanwhile, thinly slice the onions. Heat 1 tbsp oil in a pan and stir in the onions, thyme and some seasoning. Cover and cook gently for 20 mins until the onions are softened but not coloured. Remove the lid, turn up the heat, add the butter and sugar, then let the onions caramelise to a dark golden brown, stirring often. Remove the thyme sprigs, then set aside.",
+                "When the beef is ready, it will be tender and easy to pull apart at the edges. Remove it from the casserole and snip off the strings. Reheat the onion pan, stir in the flour and cook for 1 min. Whisk the floury onions into the beefy juices in the casserole, to make a thick onion gravy. Taste for seasoning. Add the beef and carrots back to the casserole, or slice the beef and bring to the table on a platter, with the carrots to the side and the gravy spooned over."
             ] 
         }
     ]
