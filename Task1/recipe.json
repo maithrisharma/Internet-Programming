@@ -6,6 +6,7 @@
             "prep":"30 mins",
             "cook":"60 mins",
             "serves": 8,
+            "ratings": 13,
             "desc": "This savoury make-ahead tart has a delicious crumbly base – no one will realise it's shop-bought pastry! Fill with goat's cheese and beautiful spring veg including asparagus and fresh peas",
             "ingredients":[
                 "500g block shortcrust pastry",
@@ -41,6 +42,7 @@
             "prep":"20 mins",
             "cook":"90 mins",
             "serves": 4,
+            "ratings": 511,
             "desc": "This French bistro classic is easy to make at home and fabulous with creamy mash or crusty bread",
             "ingredients":[
                 "1kg silverside or topside of beef with no added fat",
@@ -83,6 +85,7 @@
             "prep":"15 mins",
             "cook":"135 mins",
             "serves": 4,
+            "ratings": 148,
             "desc": "Silverside and topside are cheaper and leaner cuts of meat, well-suited to slow-cooking. The stock and juices make a great sauce when combined with caramelised onions",
             "ingredients":[
                 "1 tsp olive oil",
@@ -111,6 +114,41 @@
                 "Lift the beef onto a plate, splash the wine into the hot casserole and boil for 2 mins. Pour in the stock, return the beef, then tuck in the carrots, celery and bay leaves, trying not to submerge the carrots too much. Cover and cook in the oven for 2 hrs. (I like to turn the beef halfway through cooking.)",
                 "Meanwhile, thinly slice the onions. Heat 1 tbsp oil in a pan and stir in the onions, thyme and some seasoning. Cover and cook gently for 20 mins until the onions are softened but not coloured. Remove the lid, turn up the heat, add the butter and sugar, then let the onions caramelise to a dark golden brown, stirring often. Remove the thyme sprigs, then set aside.",
                 "When the beef is ready, it will be tender and easy to pull apart at the edges. Remove it from the casserole and snip off the strings. Reheat the onion pan, stir in the flour and cook for 1 min. Whisk the floury onions into the beefy juices in the casserole, to make a thick onion gravy. Taste for seasoning. Add the beef and carrots back to the casserole, or slice the beef and bring to the table on a platter, with the carrots to the side and the gravy spooned over."
+            ] 
+        },
+        {
+            "id":4,
+            "name":"Dauphinoise potatoes",
+            "prep":"20 mins",
+            "cook":"45 mins",
+            "serves": 8,
+            "ratings": 261,
+            "desc": "Thin slices of potato slow cooked in the oven with cream and garlic – the most decadent of side dishes",
+            "ingredients":[
+                "500ml double cream",
+                "500ml milk",
+                "3 garlic cloves",
+                "8 large King Edward or Maris Piper potatoes",
+                "100g grated gruyère cheese (optional)"
+            ],
+            "nutrition":{
+                "kcal":541,
+                "fat":"39g",
+                "saturates":"22g",
+                "carbs":"39g",
+                "sugars":"5g",
+                "fibre":"3g",
+                "protein":"11g",
+                "salt":"0.35g"
+            },
+            "method":[
+                "Heat oven to 190C/170C fan/gas 5.",
+                "Tip 500ml double cream, 500ml milk and 3 garlic cloves into a large saucepan and bring to a simmer.",
+                "Slice 8 large potatoes very finely, about 3-4mm, add them to the cream and simmer for 3 mins until just cooked.",
+                "Gently stir to separate the potato and stop it sinking and catching on the bottom of the pan.",
+                "Remove the potatoes with a slotted spoon and place in a wide shallow ovenproof dish so that they are about 5cm in depth.",
+                "Pour over the garlic infused cream (discarding the garlic) – just enough to seep through the layers and leave a little moisture on the surface.",
+                "Scatter over 100g grated gruyère cheese, if using, then bake for 30 mins until the potatoes are soft and browned – increase the heat for 5 mins if not brown enough."
             ] 
         }
     ]
