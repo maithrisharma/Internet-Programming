@@ -432,6 +432,50 @@
                 "Add the peas, salmon, crème fraîche and 50ml water. Crumble in the stock cube.",
                 "Cook for 3-4 mins until cooked through, stir in the chives and some black pepper. Then stir through to coat the pasta. Serve in bowls."
             ] 
+        },
+        {
+            "id":13,
+            "name":"Coconut curry noodle bowl",
+            "prep":"10 mins",
+            "cook":"25 mins",
+            "serves": 4,
+            "ratings": 26,
+            "desc": "This creamy noodle dish is topped with crunchy cashew nuts for added flavour and texture. It's a simple vegan supper, perfect for feeding the family",
+            "ingredients":[
+                "1 tbsp vegetable oil",
+                "2 garlic cloves , crushed",
+                "½ red chilli , finely chopped (optional)",
+                "small piece ginger , grated",
+                "1 tbsp mild curry powder",
+                "1 tbsp soy sauce",
+                "1 tbsp sriracha (or another 1 tbsp soy sauce is you don't want the sauce hot)",
+                "400g can coconut milk",
+                "80g cashew nuts",
+                "1 tsp soy sauce",
+                "1 tsp maple syrup",
+                "1 tsp sesame oil",
+                "2 heads pak choi , halved",
+                "200g green beans , trimmed and halved",
+                "2 carrots , peeled into long ribbons",
+                "3 x 150g packs fresh udon noodles",
+                "large handful coriander , chopped, to serve"
+            ],
+            "nutrition":{
+                "kcal":533,
+                "fat":"31g",
+                "saturates":"17g",
+                "carbs":"44g",
+                "sugars":"11g",
+                "fibre":"10g",
+                "protein":"15g",
+                "salt":"1.3g"
+            },
+            "method":[
+                "Heat the oil in a large saucepan, add the garlic, chilli (if using) and ginger, and fry on a low heat for about 5 mins until softened. Add the curry powder and stir, frying for 1 min more until aromatic. Add the soy sauce and sriracha (if using), and stir again. Pour in the coconut milk, breaking up any solids on the top of the can with a spoon. Stir until combined, then leave the sauce on a medium heat with a lid on to simmer for 15 mins.",
+                "Meanwhile, heat oven to 200C/180C fan/gas 6. Put the nuts in a bowl and mix with the soy sauce and maple syrup until fully coated. Scatter the nuts on a sheet of baking parchment on a baking tray, and roast for 10-12 mins, stirring halfway through.",
+                "While the nuts are roasting, heat the sesame oil in a wok or large frying pan. When hot, add the veg and stir-fry for 3-4 mins until slightly softened. Add the noodles and fry for another 2 mins until heated through.",
+                "Take both pans off the heat and pour the coconut sauce into the wok (or add the noodles to the saucepan) and stir until everything is coated in the sauce. Spoon into bowls and scatter over the nuts and coriander."
+            ] 
         }
     ]
 }
