@@ -5,6 +5,7 @@
     "type": "object",
         "properties":{
             "receipes": {
+                "type":"array",
                 "items": {
                     "type": "object",
                         "properties": {
@@ -14,13 +15,13 @@
                             "cook": { "type": "string"},
                             "serves": { "type": "integer"},
                             "desc": { "type": "string"},
-                            "ingredients": { "type": "array",
+                            "ingredients": { 
+                                "type": "array",
                                 "items": {
                                      "type": "string"
                                     
                                 }
-                            },
-                            "observations": { "type": "string"}
+                            }
                         }
                 }
             }
