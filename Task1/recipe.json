@@ -548,6 +548,40 @@
                 "Put the naan breads on a baking tray, sprinkle over a little water, then put in the oven for 2 mins to heat up. Meanwhile, put the chicken and peppers in a frying pan with the curry paste, toss together, then fry over a high heat for 6-8 mins until cooked.",
                 "Take the naans out the oven, spread each one with yogurt, then top with the chicken, red onion, green chilli, coriander and mango chutney."
             ] 
+        },
+        {
+            "id":16,
+            "name":"Salted caramel choc pots",
+            "prep":"30 mins",
+            "cook":"5 mins",
+            "serves": 2,
+            "ratings": 25,
+            "desc": "Combining sweet and salty flavours really works when chocolate and toffee is involved - best served in individual portions",
+            "ingredients":[
+                "4 tbsp dulce de leche or canned caramel (we used Carnation)",
+                "½ tsp sea salt , plus extra to serve",
+                "85g each milk and dark chocolate , broken into squares",
+                "1-2 long, thin, plain grissini",
+                "2 tbsp demerara sugar",
+                "100ml double cream , at room temperature",
+                "50ml milk"
+            ],
+            "nutrition":{
+                "kcal":847,
+                "fat":"53g",
+                "saturates":"32g",
+                "carbs":"83",
+                "sugars":"79g",
+                "fibre":"2g",
+                "protein":"8g",
+                "salt":"1.5g"
+            },
+            "method":[
+                "Mix the caramel with the salt, divide between 2 small glasses and chill.",
+                "Melt the chocolates together in a glass bowl set over a pan of barely simmering water. Snap the grissini into short lengths, then dip each end into the chocolate to coat a little. Sit on a wire rack for the chocolate to drip and set a little, then dip the chocolate ends into the sugar to coat. Sit in an airtight container lined with baking parchment and chill to set until ready to serve.",
+                "Stir the double cream and milk into the remaining melted chocolate until smooth, then scrape into a jug. Slowly pour on top of the caramel, around the edges first. Chill the pots for at least 2 hrs, or up to 24 hrs.",
+                "To serve, scatter a little more sea salt on top of each pot, then add one or two sugar-tipped grissini."
+            ] 
         }
     ]
 }
