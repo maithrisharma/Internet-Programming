@@ -397,6 +397,41 @@
                 "Scatter 125g vegetarian buffalo mozzarella over the vegetables then cover and leave for 10 mins to settle and melt the cheese.",
                 "Scatter with extra basil and serve with a handful of rocket."
             ] 
+        },
+        {
+            "id":12,
+            "name":"Pasta with salmon & peas",
+            "prep":"15 mins",
+            "cook":"12 mins",
+            "serves": 4,
+            "ratings": 258,
+            "desc": "Make this salmon pasta in under 20 minutes for a dinner the whole family can enjoy. Kids will love the fun-shaped pasta while packing in fibre and omega-3",
+            "ingredients":[
+                "240g wholewheat fusilli",
+                "knob of butter",
+                "1 large shallot, finely chopped",
+                "140g frozen peas",
+                "2 skinless salmon fillets, cut into chunks",
+                "140g low-fat crème fraîche",
+                "½ low-salt vegetable stock cube",
+                "small bunch of chives, snipped"
+            ],
+            "nutrition":{
+                "kcal":463,
+                "fat":"19g",
+                "saturates":"6g",
+                "carbs":"44g",
+                "sugars":"5g",
+                "fibre":"7g",
+                "protein":"25g",
+                "salt":"0.2g"
+            },
+            "method":[
+                "Bring a pan of water to the boil and cook the fusilli according to the pack instructions.",
+                "Meanwhile, heat a knob of butter in a saucepan, then add the shallot and cook for 5 mins or until softened.",
+                "Add the peas, salmon, crème fraîche and 50ml water. Crumble in the stock cube.",
+                "Cook for 3-4 mins until cooked through, stir in the chives and some black pepper. Then stir through to coat the pasta. Serve in bowls."
+            ] 
         }
     ]
 }
