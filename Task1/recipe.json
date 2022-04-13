@@ -224,6 +224,39 @@
                 "Put the leeks in a pan with the 300ml milk and the butter. Cook gently, part-covered, for 8 mins until the leeks are tender. (Keep an eye on things as milk can easily boil over.) Mix the 3 tbsp milk with the flour and mustard, then stir into the leek mixture – keep stirring until thickened. Take off the heat and stir in three-quarters of the cheese.",
                 "Squeeze as much liquid as you can from the spinach, then arrange on the base of 2 gratin dishes. Place a fish fillet on top of each, then spoon over the leek & cheese sauce. Top with the sweetcorn mash. Mix the remaining corn and cheese, and scatter on top. Place the dishes on a baking tray and cook for 25 mins until the fish flakes when tested and the top is golden."
             ] 
+        },
+        {
+            "id":7,
+            "name":"Creamy egg curry",
+            "prep":"10 mins",
+            "cook":"20 mins",
+            "serves": 4,
+            "ratings": 38,
+            "desc": "It may seem like an unusual combination but this is delicious. Why not try it and see.",
+            "ingredients":[
+                "2 tbsp sunflower oil",
+                "2 onions , thinly sliced",
+                "2 heaped tbsp curry paste (we used Patak's Tikka Masala)",
+                "400g can chopped tomato",
+                "8 eggs",
+                "140g frozen pea",
+                "4 tbsp Greek yogurt",
+                "rice and mango chutney to serve"
+            ],
+            "nutrition":{
+                "kcal":336,
+                "fat":"24g",
+                "saturates":"5g",
+                "carbs":"11g",
+                "sugars":"7g",
+                "fibre":"3g",
+                "protein":"20g",
+                "salt":"1.02g"
+            },
+            "method":[
+                "Heat the oil in a pan, then fry the onions over a low heat for 10 mins until golden. Add the curry paste and sizzle for 2 mins, stirring. Add the tomatoes and 200ml water, season to taste, then bring to the boil. Simmer for 10 mins until you have a rich sauce.",
+                "Meanwhile, boil the eggs for 8 mins, cool in cold water, then peel and halve. 3 Stir the peas and yogurt into the curry and simmer for another 2-3 mins. Put the eggs into the pan, spoon the curry sauce over and leave for another 2 mins to heat through. Serve with rice and mango chutney."
+            ] 
         }
     ]
 }
