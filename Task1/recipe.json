@@ -687,6 +687,34 @@
                 "Roughly chop 125g of the figs and set aside. Put the remaining figs, the dairy-free margarine and the rum into a large food processor and whizz until smooth-ish, then scrape into a large mixing bowl. Tip in the chopped figs, sultanas, raisins, grated apple, sugars, breadcrumbs, flour and allspice. Stir everything together, then spoon into your pudding basin.",
                 "Cover with the buttered paper-foil sheet, tie with string and trim. Lower into a large saucepan, with upturned saucers or scrunched-up bits of foil in the bottom (so the pud doesn’t touch the bottom), then fill the pan with enough boiling water from the kettle to come halfway up the sides of the bowl. Cover with a lid and simmer for 3 hrs, topping up the water as needed. Remove and leave to cool. Will keep in a cool, dry cupboard for up to a year."
             ] 
+        },
+        {
+            "id":20,
+            "name":"Martini",
+            "prep":"5 mins",
+            "cook":"0 mins",
+            "serves": 1,
+            "ratings": 4,
+            "desc": "Our version of the ultimate classic cocktail is stirred, not shaken. Serve your martini with a twist of lemon, or an olive",
+            "ingredients":[
+                "60ml vodka or gin",
+                "1 tbsp dry vermouth",
+                "olive or lemon peel, to garnish"
+            ],
+            "nutrition":{
+                "kcal":174,
+                "fat":"0g",
+                "saturates":"0g",
+                "carbs":"0.4g",
+                "sugars":"0.4g",
+                "fibre":"0g",
+                "protein":"0g",
+                "salt":"0g"
+            },
+            "method":[
+                "Stir the gin or vodka, dry vermouth and a little ice together or put them in a cocktail shaker to combine. ",
+                "Strain into a chilled martini glass. Serve with an olive on a cocktail stick or a twist of lemon peel."
+            ] 
         }
     ]
 }
