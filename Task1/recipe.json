@@ -354,6 +354,49 @@
                 "Settle the eggs back down on the base of the pan, scatter over the cheese and cook for about a minute until the omelette is just set and the cheese has melted.",
                 "Carefully fold the omelette using a palette knife and slide from the pan to a serving plate. Eat while the omelette is hot and the cheese still melted."
             ] 
+        },
+        {
+            "id":11,
+            "name":"Slow-cooker vegetable lasagne",
+            "prep":"30 mins",
+            "cook":"180 mins",
+            "serves": 4,
+            "ratings": 125,
+            "desc": "Make this low-calorie veggie lasagne as a lighter alternative to the traditional bake. It's layered with pasta, ratatouille and sliced aubergine, and packs in all of your five-a-day",
+            "ingredients":[
+                "1 tbsp rapeseed oil",
+                "2 onions, sliced",
+                "2 large garlic cloves, chopped",
+                "2 large courgettes, diced (400g)",
+                "1 red and 1 yellow pepper, deseeded and roughly sliced",
+                "400g can chopped tomatoes",
+                "2 tbsp tomato purée",
+                "2 tsp vegetable bouillon",
+                "15g fresh basil, chopped plus a few leaves",
+                "1 large aubergine, sliced across length or width for maximum surface area",
+                "6 wholewheat lasagne sheets (105g)",
+                "125g vegetarian buffalo mozzarella, chopped"
+            ],
+            "nutrition":{
+                "kcal":325,
+                "fat":"11g",
+                "saturates":"5g",
+                "carbs":"36g",
+                "sugars":"17g",
+                "fibre":"11g",
+                "protein":"15g",
+                "salt":"0.44g"
+            },
+            "method":[
+                "Heat 1 tbsp rapeseed oil in a large non-stick pan and fry 2 sliced onions and 2 chopped large garlic cloves for 5 mins, stirring frequently until softened.",
+                "Tip in 2 diced large courgettes, 1 red and 1 yellow pepper, both roughly sliced, and 400g chopped tomatoes with 2 tbsp tomato purée, 2 tsp vegetable bouillon and 15g chopped basil.",
+                "Stir well, cover and cook for 5 mins. Don't be tempted to add more liquid as plenty of moisture will come from the vegetables once they start cooking.",
+                "Slice 1 large aubergine. Lay half the slices of aubergine in the base of the slow cooker and top with 3 sheets of lasagne.",
+                "Add a third of the ratatouille mixture, then the remaining aubergine slices, 3 more lasagne sheets, then the remaining ratatouille mixture.",
+                "Cover and cook on High for 2½ - 3 hours until the pasta and vegetables are tender. Turn off the machine.",
+                "Scatter 125g vegetarian buffalo mozzarella over the vegetables then cover and leave for 10 mins to settle and melt the cheese.",
+                "Scatter with extra basil and serve with a handful of rocket."
+            ] 
         }
     ]
 }
