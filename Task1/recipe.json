@@ -476,6 +476,42 @@
                 "While the nuts are roasting, heat the sesame oil in a wok or large frying pan. When hot, add the veg and stir-fry for 3-4 mins until slightly softened. Add the noodles and fry for another 2 mins until heated through.",
                 "Take both pans off the heat and pour the coconut sauce into the wok (or add the noodles to the saucepan) and stir until everything is coated in the sauce. Spoon into bowls and scatter over the nuts and coriander."
             ] 
+        },
+        {
+            "id":14,
+            "name":"Wedding cake - rich dark chocolate cake",
+            "prep":"40 mins",
+            "cook":"150 mins",
+            "serves": 50,
+            "ratings": 137,
+            "desc": "This recipe makes the bottom layer of our three tier wedding cake or a simple delicious chocolate cake, perfect with a touch of cream",
+            "ingredients":[
+                "650g unsalted butter",
+                "650g plain chocolate (70% cocoa)",
+                "100ml very strong coffee- espresso is ideal",
+                "3 tsp vanilla essence",
+                "650g plain flour",
+                "2 tsp baking powder",
+                "2 tsp bicarbonate of soda",
+                "950g light soft brown sugar",
+                "10 eggs",
+                "2 x 284ml/9.5 fl oz soured cream"
+            ],
+            "nutrition":{
+                "kcal":274,
+                "fat":"16g",
+                "saturates":"9g",
+                "carbs":"30g",
+                "sugars":"20g",
+                "fibre":"1g",
+                "protein":"3g",
+                "salt":"0.23g"
+            },
+            "method":[
+                "Heat oven to 160C/fan 140C/gas 3. Butter, double-line and wrap the sides of the 30cm deep-round cake tin as before. Put the butter and chocolate into a medium saucepan, then stir over a low heat until melted and smooth. Stir in the coffee and vanilla.",
+                "Sift the flour, baking powder and bicarbonate of soda into the biggest bowl you have. Add the sugar, breaking down any lumps with your fingertips if necessary. Beat the eggs and soured cream together in a jug or bowl and pour into the flour mix. Pour in the melted chocolate mix as well, then stir with a wooden spoon until you have a thick, even chocolaty batter.",
+                "Pour into the prepared tin and bake for 2½ hrs – don’t open the oven door before 2 hrs is up, as this will cause the cake to sink. Once cooked, leave in the tin to cool completely. The unfilled cake will keep for up to four days, wrapped as before, or frozen for a month."
+            ] 
         }
     ]
 }
