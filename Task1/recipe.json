@@ -34,6 +34,46 @@
                 "Heat oven to 200C/180C fan/gas 6. Prick the base of the tart well with a fork, line with baking parchment and fill with baking beans. Bake the tart for 30 mins, remove the parchment and beans, prick again if it has puffed up, then bake for another 10-15 mins until biscuit brown.",
                 "Meanwhile, beat the eggs in a bowl, add the crème fraîche and cream, season and add a pinch of freshly grated nutmeg. Scatter the peas and most of the watercress over the tart and crumble over half the goat’s cheese. Pour over the creamy egg mixture, then lay the asparagus spears on top. Finally, slice the remaining goat’s cheese and arrange on top, then bake for 25-30 mins until the custard is just set and the cheese is golden brown. Leave to cool in the tin, trim the edges of the pastry, then remove from the tin, scatter with the remaining watercress and serve cut into slices. Can be made up to a day ahead, leave out the fridge to keep the pastry crisp."
             ]
+        },
+        {
+            "id":2,
+            "name":"One-pot chicken chasseur",
+            "prep":"20 mins",
+            "cook":"90 mins",
+            "serves": 4,
+            "desc": "This French bistro classic is easy to make at home and fabulous with creamy mash or crusty bread",
+            "ingredients":[
+                "1 tsp olive oil",
+                "25g butter",
+                "4 chicken legs",
+                "1 onion, chopped",
+                "2 garlic cloves, crushed",
+                "200g pack small button or chestnut mushrooms",
+                "225ml red wine",
+                "2 tbsp tomato purée",
+                "2 thyme sprigs",
+                "500ml chicken stock"
+            ],
+            "nutrition":{
+                "kcal":439,
+                "fat":"28g",
+                "saturates":"10g",
+                "carbs":"7g",
+                "sugars":"6g",
+                "fibre":"2g",
+                "protein":"35g",
+                "salt":"1.11g"
+            },
+            "method":[
+                "Heat 1 tsp olive oil and half of the 25g butter in a large lidded casserole.",
+                "Season 4 chicken legs, then fry for about 5 mins on each side until golden brown. Remove and set aside.",
+                "Melt the remaining butter in the pan. Add 1 chopped onion, then fry for about 5 mins until soft.",
+                "Add 2 crushed garlic cloves, cook for about 1 min, add 200g small button or chestnut mushrooms, cook for 2 mins, then add 225ml red wine.",
+                "Stir in 2 tbsp tomato purée, let the liquid bubble and reduce for about 5 mins, then stir in 2 thyme sprigs and pour over 500ml chicken stock.",
+                "Slip the chicken legs back into the pan, then cover and simmer on a low heat for about 1 hr until the chicken is very tender.",
+                "Remove the chicken legs from the pan and keep warm. Rapidly boil down the sauce for 10 mins or so until it is syrupy and the flavour has concentrated.",
+                "Put the chicken legs back into the sauce and serve."
+            ] 
         }
     ]
 }
