@@ -21,6 +21,19 @@
                                      "type": "string"
                                     
                                 }
+                            },
+                            "nutrition":{
+                                "type":"object",
+                                "properties":{
+                                    "kcal": { "type": "integer"},
+                                    "fat":  { "type": "string"},
+                                    "saturates":  { "type": "string"},
+                                    "carbs":  { "type": "string"},
+                                    "sugars":  { "type": "string"},
+                                    "fibre":  { "type": "string"},
+                                    "protein":  { "type": "string"},
+                                    "salt":  { "type": "string"}
+                                }
                             }
                         }
                 }
