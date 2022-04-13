@@ -512,6 +512,42 @@
                 "Sift the flour, baking powder and bicarbonate of soda into the biggest bowl you have. Add the sugar, breaking down any lumps with your fingertips if necessary. Beat the eggs and soured cream together in a jug or bowl and pour into the flour mix. Pour in the melted chocolate mix as well, then stir with a wooden spoon until you have a thick, even chocolaty batter.",
                 "Pour into the prepared tin and bake for 2½ hrs – don’t open the oven door before 2 hrs is up, as this will cause the cake to sink. Once cooked, leave in the tin to cool completely. The unfilled cake will keep for up to four days, wrapped as before, or frozen for a month."
             ] 
+        },
+        {
+            "id":15,
+            "name":"Chicken tikka masala pizzas",
+            "prep":"10 mins",
+            "cook":"10 mins",
+            "serves": 4,
+            "ratings": 25,
+            "desc": "Rustle up our spiced chicken pizzas using naan bread in just 20 minutes. To balance the heat, serve them with dollops of mango chutney and natural yogurt",
+            "ingredients":[
+                "1 small red onion , thinly sliced",
+                "1 tbsp red wine vinegar",
+                "4 garlic and coriander naan breads",
+                "4 chicken breasts , cut into strips",
+                "2 green pepper , sliced",
+                "2-3 tbsp tikka masala curry paste",
+                "150ml natural yogurt",
+                "1 green chilli , thinly sliced",
+                "1 small pack coriander , leaves torn",
+                "few dollops of mango chutney , to serve"
+            ],
+            "nutrition":{
+                "kcal":683,
+                "fat":"16g",
+                "saturates":"3g",
+                "carbs":"83g",
+                "sugars":"11g",
+                "fibre":"7g",
+                "protein":"47g",
+                "salt":"2g"
+            },
+            "method":[
+                "Heat oven to 180C/160C fan/gas 4. Toss the red onion with the red wine vinegar and a good pinch of salt and set aside (the vinegar will soften the onion slightly, which is a blessing as no one wants completely raw onion on pizza).",
+                "Put the naan breads on a baking tray, sprinkle over a little water, then put in the oven for 2 mins to heat up. Meanwhile, put the chicken and peppers in a frying pan with the curry paste, toss together, then fry over a high heat for 6-8 mins until cooked.",
+                "Take the naans out the oven, spread each one with yogurt, then top with the chicken, red onion, green chilli, coriander and mango chutney."
+            ] 
         }
     ]
 }
