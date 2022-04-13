@@ -257,6 +257,37 @@
                 "Heat the oil in a pan, then fry the onions over a low heat for 10 mins until golden. Add the curry paste and sizzle for 2 mins, stirring. Add the tomatoes and 200ml water, season to taste, then bring to the boil. Simmer for 10 mins until you have a rich sauce.",
                 "Meanwhile, boil the eggs for 8 mins, cool in cold water, then peel and halve. 3 Stir the peas and yogurt into the curry and simmer for another 2-3 mins. Put the eggs into the pan, spoon the curry sauce over and leave for another 2 mins to heat through. Serve with rice and mango chutney."
             ] 
+        },
+        {
+            "id":8,
+            "name":"Roast cauliflower with caper dressing",
+            "prep":"20 mins",
+            "cook":"40 mins",
+            "serves": 6,
+            "ratings": 6,
+            "desc": "Cooking cauliflower this way gives it a richness that's balanced by the dressing. A great side dish for a roast dinner and it also works as a vegetarian main",
+            "ingredients":[
+                "1 medium cauliflower , leaves trimmed and reserved",
+                "50g butter , softened",
+                "1 tbsp olive oil",
+                "4 tbsp capers",
+                "2 tbsp chopped parsley",
+                "1 lemon , zested and juiced"
+            ],
+            "nutrition":{
+                "kcal":112,
+                "fat":"9g",
+                "saturates":"5g",
+                "carbs":"4g",
+                "sugars":"3g",
+                "fibre":"2g",
+                "protein":"2g",
+                "salt":"0.7g"
+            },
+            "method":[
+                "Heat oven to 190C/170C fan/gas 5. Scatter the cauliflower leaves into a small roasting tin, then sit the cauliflower in the middle. Rub over the butter, sprinkle with some salt and roast for 20 mins.",
+                "Reduce the temperature to 160C/140C/gas 3 and cook the cauliflower for 20 mins more, basting with butter. Add the oil, capers, parsley and lemon zest and juice to the hot butter and spoon over the cauliflower a few times before serving – it will soak up the dressing flavour. When you’re ready to serve, cut into wedges and serve with the crisp leaves."
+            ] 
         }
     ]
 }
