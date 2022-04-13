@@ -150,6 +150,44 @@
                 "Pour over the garlic infused cream (discarding the garlic) – just enough to seep through the layers and leave a little moisture on the surface.",
                 "Scatter over 100g grated gruyère cheese, if using, then bake for 30 mins until the potatoes are soft and browned – increase the heat for 5 mins if not brown enough."
             ] 
+        },
+        {
+            "id":5,
+            "name":"Butterfly cakes",
+            "prep":"15 mins",
+            "cook":"15 mins",
+            "serves": 10,
+            "ratings": 49,
+            "desc": "Treat family and friends to pretty butterfly cupcakes. Ours easy buns are topped with a light vanilla buttercream, jam and sprinkles, but you can decorate any way you like",
+            "ingredients":[
+                "110g butter , softened",
+                "110g caster sugar",
+                "2 eggs",
+                "1 tsp vanilla extract",
+                "110g self-raising flour",
+                "½ tsp baking powder",
+                "1 tbsp milk , plus 2 tbsp if needed, to loosen the buttercream",
+                "strawberry jam (optional)",
+                "sprinkles (optional)",
+                "300g icing sugar",
+                "150g butter , softened",
+                "2 tsp vanilla paste"
+            ],
+            "nutrition":{
+                "kcal":419,
+                "fat":"23g",
+                "saturates":"14g",
+                "carbs":"50g",
+                "sugars":"42g",
+                "fibre":"0g",
+                "protein":"3g",
+                "salt":"0.7g"
+            },
+            "method":[
+                "Heat the oven to 180C/160C fan/gas 4. Line a cupcake tin with 10 cases. To make the sponge, tip the butter, sugar, eggs, vanilla, flour, baking powder and milk into a large mixing bowl and beat with either a hand whisk or electric mixer until smooth, pale and combined. Divide the batter between the cases and bake for 15 mins until golden brown and a skewer inserted in the middle of a cake comes out clean. Leave on a wire rack to cool.",
+                "While the cakes are cooling, make the buttercream by beating together the icing sugar, butter and vanilla until pale and fluffy. Mix in the extra milk if the icing feels too stiff.",
+                "Once the cakes are cool, use a sharp knife to slice off the tops, then cut the tops in half. Pipe or spread the buttercream on top of the cakes, then gently push two semi-circular halves into the buttercream on each cake, doing this at an angle to look like butterfly wings. You can serve the cupcakes at this stage, or decorate them with a little blob of jam in the centre and a scattering of sprinkles, if you like."
+            ] 
         }
     ]
 }
