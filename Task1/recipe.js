@@ -1,6 +1,7 @@
-document.addEventListener('DOMContentLoaded',makeAjaxRequest);
-function makeAjaxRequest(){
-    $.ajax({
+
+(function makeAjaxRequest(){
+    setTimeout(function(){
+    $.ajax( {
         type:'GET',
         url:'recipe.json',
         dataType:"json",
@@ -15,5 +16,6 @@ function makeAjaxRequest(){
         error: function(){
             $("#updatemessage").append("Error");
         }
-    })
-}
+    });
+    }, 250);
+}());
