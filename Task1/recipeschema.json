@@ -10,6 +10,7 @@
                     "type": "object",
                         "properties": {
                             "id" : { "type": "integer"},
+                            "image": { "type": "string"},
                             "name": { "type": "string" },
                             "prep": { "type": "string"},
                             "cook": { "type": "string"},
