@@ -22,7 +22,7 @@
         }
     });
     }, 250);
-}());
+})();
 
 function Ingredients(list){
     console.log(list);
