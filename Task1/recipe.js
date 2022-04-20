@@ -7,21 +7,23 @@
         dataType:"json",
         success: function(response){
             let txt="";
+            $('#recipelist').empty();
             $.each(response.recipes,function(index){
                 var ingredients=JSON.stringify(response.recipes[index].ingredients);
-                console.log(ingredients);
-                console.log(JSON.parse(ingredients));
+                //console.log(ingredients);
+                //console.log(JSON.parse(ingredients));
                 var methods=JSON.stringify(response.recipes[index].method);
                 txt+="<tr><td><img src='"+response.recipes[index].image+"' style='width:200px;height:200px'/></td><td>"+response.recipes[index].name
                 +"</td><td>"+response.recipes[index].prep+"</td><td><button id='"+"Ingredient"+response.recipes[index].id+"'onclick='Ingredients("+ingredients+")'>Ingredients</button></td><td><button onclick='Method("+methods+")'>Method</button></td></tr>";
             });
             $("#recipelist").append(txt);
+            makeAjaxRequest();
         },
         error: function(){
             $("#updatemessage").append("Error");
         }
     });
-    }, 250);
+    }, 1000);
 })();
 
 function Ingredients(list){
