@@ -23,7 +23,7 @@
             $("#updatemessage").append("Error");
         }
     });
-    }, 1000);
+    }, 2500);
 })();
 
 function Ingredients(list){
