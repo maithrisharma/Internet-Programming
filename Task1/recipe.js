@@ -13,11 +13,14 @@
                 //console.log(ingredients);
                 //console.log(JSON.parse(ingredients));
                 var methods=JSON.stringify(response.recipes[index].method);
-                txt+="<tr><td><img src='"+response.recipes[index].image+"' style='width:200px;height:200px'/></td><td>"+response.recipes[index].name
-                +"</td><td>"+response.recipes[index].prep+"</td><td><button id='"+"Ingredient"+response.recipes[index].id+"'onclick='Ingredients("+ingredients+")'>Ingredients</button></td><td><button onclick='Method("+methods+")'>Method</button></td></tr>";
+                txt+="<tr><td style='width:300px;'><img src='"+response.recipes[index].image+
+                "' class='img'/></td><td><h1 class='name'>"+response.recipes[index].name
+                +"</h1><p class='info'>By: "+response.recipes[index].author+"&emsp;<span>Ratings: "+response.recipes[index].ratings+"</span><br><br>"+response.recipes[index].desc+"<br><br>Prep Time: "+response.recipes[index].prep+"<br>Cook Time: "+response.recipes[index].cook+"</p><button class='btn' id='"+"Ingredient"+
+                response.recipes[index].id+"'onclick='Ingredients("+ingredients+
+                ")'>Ingredients</button>&emsp;<span><button onclick='Method("+methods+")'>Method</button></span></td></tr>";
             });
             $("#recipelist").append(txt);
-            makeAjaxRequest();
+            //makeAjaxRequest();
         },
         error: function(){
             $("#updatemessage").append("Error");
