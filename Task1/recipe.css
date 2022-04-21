@@ -29,7 +29,7 @@
 
     overflow-x:auto;
     margin-top: 0px;
-    border: 1px solid rgba(255,255,255,0.3);
+    /*border: 1px solid rgba(255,255,255,0.3);*/
   }
   th{
     padding: 20px 15px;
