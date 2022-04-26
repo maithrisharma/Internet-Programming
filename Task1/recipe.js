@@ -1,7 +1,7 @@
 
 (function Recursive(){
   AjaxRequest();
-  setTimeout(Recursive,2500);
+  setTimeout(Recursive,5000);
   
 })();
 function AjaxRequest(){
@@ -16,7 +16,9 @@ function AjaxRequest(){
   if(xhr){
     xhr.open("GET","recipe.json",true);
     xhr.send();
+    console.log("sended");
     xhr.onreadystatechange= showContents;
+    
   }
   else{
     document.getElementById("updatemessage").innerHTML="Error";
@@ -27,6 +29,7 @@ function showContents(){
   if(xhr.readyState == 4){
     if(xhr.status==200){
       let response= JSON.parse(xhr.responseText);
+      console.log(response);
       let txt ="";
       for(let i in response.recipes){
         var nutritions=JSON.stringify(response.recipes[i].nutrition);
@@ -41,7 +44,7 @@ function showContents(){
             response.recipes[i].id+"'onclick='Ingredients("+ingredients+
             ")'>Ingredients</button>&emsp;<button onclick='Method("+methods+")'>Method</button></span></td></tr>";
       }
-      console.log(txt);
+      console.log("refreshed");
       document.getElementById("recipelist").innerHTML=txt;
     }
     else{

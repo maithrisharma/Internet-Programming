@@ -13,6 +13,7 @@
                             "image": { "type": "string"},
                             "name": { "type": "string" },
                             "author": { "type": "string"},
+                            "icon": { "type": "string"},
                             "foodType": {"type": "string"},
                             "difficulty": { "type": "string"},
                             "prep": { "type": "string"},
