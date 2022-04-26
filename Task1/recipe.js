@@ -43,7 +43,7 @@ function showContents(){
             +"</h1><p class='info'>By: "+response.recipes[i].author+"<br><br>"+response.recipes[i].desc+"<br><br>Ratings: "+response.recipes[i].ratings+"<br>Prep Time: "+response.recipes[i].prep+"<br>Cook Time: "+response.recipes[i].cook+"<br>Serves: "+response.recipes[i].serves+"<span>&emsp;Difficulty: "+response.recipes[i].difficulty+"</span></p><button class='btn' onclick='Nutrition("+nutritions+
             ")'>Nutritions</button><span>&emsp;<button class='btn' id='"+"Ingredient"+
             response.recipes[i].id+"'onclick='Ingredients("+ingredients+
-            ")'>Ingredients</button>&emsp;<button onclick='Method("+methods+")'>Method</button></span></td></tr>";
+            ")'>Ingredients</button>&emsp;<button class='btn' onclick='Method("+methods+")'>Method</button></span></td></tr>";
       }
       console.log("refreshed");
       document.getElementById("recipelist").innerHTML=txt;
