@@ -37,7 +37,7 @@ function showContents(){
             //console.log(ingredients);
             //console.log(JSON.parse(ingredients));
             var methods=JSON.stringify(response.recipes[i].method);
-            txt+="<tr><td class='tdImg'><a href='#'><img src='"+response.recipes[i].image+
+            txt+="<tr><td>"+response.recipes[i].id+"</td><td class='tdImg'><a href='#'><img src='"+response.recipes[i].image+
             "' class='img'/></a></td><td class='tdIcon'><img src='"+response.recipes[i].icon+
             "' class='iconimg'/></td><td><h1 class='name'>"+response.recipes[i].name
             +"</h1><p class='info'>By: "+response.recipes[i].author+"<br><br>"+response.recipes[i].desc+"<br><br>Ratings: "+response.recipes[i].ratings+"<br>Prep Time: "+response.recipes[i].prep+"<br>Cook Time: "+response.recipes[i].cook+"<br>Serves: "+response.recipes[i].serves+"<span>&emsp;Difficulty: "+response.recipes[i].difficulty+"</span></p><button class='btn' onclick='Nutrition("+nutritions+
