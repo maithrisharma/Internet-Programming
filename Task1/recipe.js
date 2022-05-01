@@ -126,7 +126,7 @@ if (event.target == modal) {
 
 function Ingredients(list){
     console.log(list);
-    var modal = document.getElementById("myModal");
+    var modal = document.getElementById("ingredientsModal");
     var data = document.getElementById("ingredientsList");  
     var ingredientshtml="<ul>"
     list.forEach(element => {
