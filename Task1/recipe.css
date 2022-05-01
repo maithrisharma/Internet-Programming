@@ -42,8 +42,8 @@
   }
   table{
     width:100%;
-
- }
+ border-spacing: 0px;
+}
   .tbl-header{
     background-color: rgba(255,255,255,0.3);
    }
@@ -78,7 +78,7 @@
     font-family: 'Georgia, serif';
     
   }
-  section{
+  .sectionDiv{
     margin: 50px;
   }
   
