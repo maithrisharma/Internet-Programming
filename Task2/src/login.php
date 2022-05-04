@@ -2,10 +2,10 @@
     session_start();
     include "connection.php";
     if(isset($_POST["login"])){
-        // if($_POST["username"]=="" or $_POST["email"] or $_POST["password"]==""){
+        if($_POST["username"]=="" or $_POST["email"] or $_POST["password"]==""){
             //echo "<h1>Username, Email and Password cannot be empty!!</h1>";
-        //}
-        //else{
+        }
+        else{
             $username =strip_tags(trim($_POST["username"]));
             echo $username; //textbox name "txt_username_email"
             $email  =trim($_POST["email"]);
@@ -20,9 +20,8 @@
                 header("Location:index.php");
             }
             echo "<h1>Incorrect Password or EMail</h1>";
-       // }
+        }
     }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

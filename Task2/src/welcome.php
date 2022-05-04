@@ -1,6 +1,4 @@
-<center>
- <h2>
- <?php
+<?php
     
  require_once 'connection.php';
     
@@ -22,12 +20,22 @@
  {
  ?>
   Welcome,
- <?php
+<?php
    echo $row['username'];
  }
  ?>
  </h2>
- 
+ <h3>Sample New Recipe Entery Form</h3>
+            <form action="post">
+                <div class="sketch">
+                    <img src="newRecipe.jpeg" alt="New recipe entry form">
+                </div>    
+                <div class="addmore">
+                    <!-- add more feilds for the remaining recipe info ...-->
+                    <p class="note">The sketch above provides an incomplete list of the required information for a new recipe. You need to add the missing feilds to the New Recipe Entry Form you are going to develop.</p>
+                    <input type="submit" value="Add Recipe" />
+                    <!--input type="reset" value="Cancel" /-->                
+                </div>
+            </form>
   <a href="logout.php">Logout</a>
   
-</center>

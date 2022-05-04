@@ -1,4 +1,67 @@
 <?php
+
+require_once "connection.php";
+
+if(isset($_POST['btn_register'])) //button name "btn_register"
+{
+ $username = strip_tags($_POST['txt_username']); //textbox name "txt_email"
+ $email  = strip_tags($_POST['txt_email']);  //textbox name "txt_email"
+ $password = strip_tags($_POST['txt_password']); //textbox name "txt_password"
+  
+ if(empty($username)){
+  $errorMsg[]="Please enter username"; //check username textbox not empty 
+ }
+ else if(empty($email)){
+  $errorMsg[]="Please enter email"; //check email textbox not empty 
+ }
+ else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+  $errorMsg[]="Please enter a valid email address"; //check proper email format 
+ }
+ else if(empty($password)){
+  $errorMsg[]="Please enter password"; //check passowrd textbox not empty
+ }
+ else if(strlen($password) < 6){
+  $errorMsg[] = "Password must be atleast 6 characters"; //check passowrd must be 6 characters
+ }
+ else
+ { 
+  try
+  { 
+   $query=$db->prepare("SELECT username, email FROM users 
+          WHERE username=? OR email=?"); // sql select query
+   
+   $qquery>execute(array($username, $email)); //execute query 
+   $row=$query->fetch(PDO::FETCH_ASSOC); 
+   
+   if($row["username"]==$username){
+    $errorMsg[]="Sorry username already exists"; //check condition username already exists 
+   }
+   else if($row["email"]==$email){
+    $errorMsg[]="Sorry email already exists"; //check condition email already exists 
+   }
+   else if(!isset($errorMsg)) //check no "$errorMsg" show then continue
+   {
+    $new_password = password_hash($password, PASSWORD_DEFAULT); //encrypt password using password_hash()
+    
+    $insert_stmt=$db->prepare("INSERT INTO users (username,email,password) VALUES
+                (:uname,:uemail,:upassword)");   //sql insert query     
+    
+    if($insert_stmt->execute(array( ':uname' =>$username, 
+                                    ':uemail'=>$email, 
+                                    ':upassword'=>$new_password))){
+             
+     $registerMsg="Register Successfully..... Please Click On Login Account Link"; //execute query success message
+    }
+   }
+  }
+  catch(PDOException $e)
+  {
+   echo $e->getMessage();
+  }
+ }
+}
+?>
+<?php
 if(isset($errorMsg))
 {
  foreach($errorMsg as $error)
@@ -55,66 +118,3 @@ if(isset($registerMsg))
  </div>
      
 </form>
-<?php
-
-require_once "connection.php";
-
-if(isset($_REQUEST['btn_register'])) //button name "btn_register"
-{
- $username = strip_tags($_REQUEST['txt_username']); //textbox name "txt_email"
- $email  = strip_tags($_REQUEST['txt_email']);  //textbox name "txt_email"
- $password = strip_tags($_REQUEST['txt_password']); //textbox name "txt_password"
-  
- if(empty($username)){
-  $errorMsg[]="Please enter username"; //check username textbox not empty 
- }
- else if(empty($email)){
-  $errorMsg[]="Please enter email"; //check email textbox not empty 
- }
- else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-  $errorMsg[]="Please enter a valid email address"; //check proper email format 
- }
- else if(empty($password)){
-  $errorMsg[]="Please enter password"; //check passowrd textbox not empty
- }
- else if(strlen($password) < 6){
-  $errorMsg[] = "Password must be atleast 6 characters"; //check passowrd must be 6 characters
- }
- else
- { 
-  try
-  { 
-   $select_stmt=$db->prepare("SELECT username, email FROM users 
-          WHERE username=:uname OR email=:uemail"); // sql select query
-   
-   $select_stmt->execute(array(':uname'=>$username, ':uemail'=>$email)); //execute query 
-   $row=$select_stmt->fetch(PDO::FETCH_ASSOC); 
-   
-   if($row["username"]==$username){
-    $errorMsg[]="Sorry username already exists"; //check condition username already exists 
-   }
-   else if($row["email"]==$email){
-    $errorMsg[]="Sorry email already exists"; //check condition email already exists 
-   }
-   else if(!isset($errorMsg)) //check no "$errorMsg" show then continue
-   {
-    $new_password = password_hash($password, PASSWORD_DEFAULT); //encrypt password using password_hash()
-    
-    $insert_stmt=$db->prepare("INSERT INTO users (username,email,password) VALUES
-                (:uname,:uemail,:upassword)");   //sql insert query     
-    
-    if($insert_stmt->execute(array( ':uname' =>$username, 
-                                    ':uemail'=>$email, 
-                                    ':upassword'=>$new_password))){
-             
-     $registerMsg="Register Successfully..... Please Click On Login Account Link"; //execute query success message
-    }
-   }
-  }
-  catch(PDOException $e)
-  {
-   echo $e->getMessage();
-  }
- }
-}
-?>
