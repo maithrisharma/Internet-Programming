@@ -23,15 +23,29 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="layout.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
-    Welcome,
+  <header>
+            <h3>CSYM019 - BBC GOOD FOOD RECIPES</h3>
+            Welcome,
 <?php
    echo $row['username'];
  }
  ?>
+            <a href="logout.php">Logout</a>
+        </header>
+    
+ <nav>
+            <ul>
+                <li><a href="./recipeSelectionForm.html">Recipe Report</a></li>
+                <li><a href="./newRecipe.html">New Recipe</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h3>Sample New Recipe Entery Form</h3>
  <div class="container">
     <form method="post" class="form-horizontal">
         
@@ -91,6 +105,66 @@
         </div>
       </div>
       <div class="form-group">
+        <label class="col-sm-3 control-label">Ingredients</label>
+        <div class="col-sm-6">
+        <textarea name="ingredients" rows="10" class="form-control" placeholder="Enter Ingredients"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Kcal</label>
+        <div class="col-sm-6">
+          <input type="number" min="0" name="kcal" class="form-control" placeholder="Enter Kcal" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Fat</label>
+        <div class="col-sm-6">
+          <input type="text" name="fat" class="form-control" placeholder="Enter fat" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Saturates</label>
+        <div class="col-sm-6">
+          <input type="text" name="saturates" class="form-control" placeholder="Enter Saturates" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Carbs</label>
+        <div class="col-sm-6">
+          <input type="text" name="carbs" class="form-control" placeholder="Enter Carbs" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Sugars</label>
+        <div class="col-sm-6">
+          <input type="text" name="sugars" class="form-control" placeholder="Enter Sugars" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Fibre</label>
+        <div class="col-sm-6">
+          <input type="text" name="fibre" class="form-control" placeholder="Enter Fibre" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Protein</label>
+        <div class="col-sm-6">
+          <input type="text" name="protein" class="form-control" placeholder="Enter Protein" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Salt</label>
+        <div class="col-sm-6">
+          <input type="text" name="salt" class="form-control" placeholder="Enter Salt" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Method</label>
+        <div class="col-sm-6">
+        <textarea name="method" rows="10" class="form-control" placeholder="Enter Method"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
         <div class="col-sm-offset-3 col-sm-9 m-t-15">
           <input type="submit"  name="add" class="btn btn-primary " value="Add">
         </div>
@@ -99,7 +173,9 @@
  
      
 </form>
-  <a href="logout.php">Logout</a>
+</main>
+        <footer>&copy; CSYM019 2022</footer>
+  
 </div>
 </body> 
 </html>
