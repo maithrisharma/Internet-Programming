@@ -30,7 +30,7 @@ if(isset($_POST['btn_register'])) //button name "btn_register"
    $query=$db->prepare("SELECT username, email FROM users 
           WHERE username=? OR email=?"); // sql select query
    
-   $qquery>execute(array($username, $email)); //execute query 
+   $query->execute(array($username, $email)); //execute query 
    $row=$query->fetch(PDO::FETCH_ASSOC); 
    
    if($row["username"]==$username){
@@ -41,14 +41,14 @@ if(isset($_POST['btn_register'])) //button name "btn_register"
    }
    else if(!isset($errorMsg)) //check no "$errorMsg" show then continue
    {
-    $new_password = password_hash($password, PASSWORD_DEFAULT); //encrypt password using password_hash()
+    //$new_password = password_hash($password, PASSWORD_DEFAULT); //encrypt password using password_hash()
     
     $insert_stmt=$db->prepare("INSERT INTO users (username,email,password) VALUES
                 (:uname,:uemail,:upassword)");   //sql insert query     
     
     if($insert_stmt->execute(array( ':uname' =>$username, 
                                     ':uemail'=>$email, 
-                                    ':upassword'=>$new_password))){
+                                    ':upassword'=>$password))){
              
      $registerMsg="Register Successfully..... Please Click On Login Account Link"; //execute query success message
     }
@@ -82,6 +82,14 @@ if(isset($registerMsg))
 <?php
 }
 ?> 
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
 <form method="post" class="form-horizontal">
         
  <div class="form-group">
@@ -118,3 +126,5 @@ if(isset($registerMsg))
  </div>
      
 </form>
+</body>
+</html>

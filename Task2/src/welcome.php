@@ -19,23 +19,87 @@
  if(isset($_SESSION['user_login']))
  {
  ?>
-  Welcome,
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    Welcome,
 <?php
    echo $row['username'];
  }
  ?>
- </h2>
- <h3>Sample New Recipe Entery Form</h3>
-            <form action="post">
-                <div class="sketch">
-                    <img src="newRecipe.jpeg" alt="New recipe entry form">
-                </div>    
-                <div class="addmore">
-                    <!-- add more feilds for the remaining recipe info ...-->
-                    <p class="note">The sketch above provides an incomplete list of the required information for a new recipe. You need to add the missing feilds to the New Recipe Entry Form you are going to develop.</p>
-                    <input type="submit" value="Add Recipe" />
-                    <!--input type="reset" value="Cancel" /-->                
-                </div>
-            </form>
+ <div class="container">
+    <form method="post" class="form-horizontal">
+        
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Name</label>
+        <div class="col-sm-6">
+          <input type="text" name="name" class="form-control" placeholder="Enter Recipe Name" />
+        </div>
+      </div>
+    
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Author</label>
+        <div class="col-sm-6">
+          <input type="text" name="author" class="form-control" placeholder="Enter Author" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Prep Time</label>
+        <div class="col-sm-6">
+          <input type="text" name="prep" class="form-control" placeholder="Enter Preparation Time" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Cook Time</label>
+        <div class="col-sm-6">
+          <input type="text" name="cook" class="form-control" placeholder="Enter Cooking Time" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Serves</label>
+        <div class="col-sm-6">
+          <input type="number" name="serves" min="1" class="form-control" placeholder="Enter Serves " />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Ratings</label>
+        <div class="col-sm-6">
+          <input type="number" name="ratings" min="0" class="form-control" placeholder="Enter Ratings" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Food Type</label>
+        <div class="col-sm-6">
+          <input type="text" name="foodType" class="form-control" placeholder="Enter Food Type" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Difficulty</label>
+        <div class="col-sm-6">
+          <input type="text" name="difficulty" class="form-control" placeholder="Enter Difficulty" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Description</label>
+        <div class="col-sm-6">
+          <input type="text" name="desc" class="form-control" placeholder="Enter Description" />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9 m-t-15">
+          <input type="submit"  name="add" class="btn btn-primary " value="Add">
+        </div>
+      </div>
+    
+ 
+     
+</form>
   <a href="logout.php">Logout</a>
-  
+</div>
+</body> 
+</html>

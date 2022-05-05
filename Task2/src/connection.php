@@ -17,7 +17,7 @@
 $db_host="db"; //localhost server 
 $db_user="root"; //database username
 $db_password="csym019"; //database password   
-$db_name="Login"; //database name
+$db_name="Recipe"; //database name
 
 try
 {

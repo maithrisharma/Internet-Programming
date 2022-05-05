@@ -36,7 +36,7 @@ if(isset($_POST['login'])) //button name is "btn_login"
    {
     if($username==$row["username"] OR $email==$row["email"]) //check condition user taypable "username or email" are both match from database "username or email" after continue
     {
-     if(password_verify($password, $row["password"])) //check condition user taypable "password" are match from database "password" using password_verify() after continue
+     if($password== $row["password"]) //check condition user taypable "password" are match from database "password" using password_verify() after continue
      {
       $_SESSION["user_login"] = $row["user_id"]; //session name is "user_login"
       $loginMsg = "Successfully Login...";  //user login success message
@@ -84,7 +84,15 @@ if(isset($loginMsg))
  </div>
 <?php
 }
-?> 
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body> 
 <form method="post" class="form-horizontal">
      
  <div class="form-group">
@@ -114,3 +122,5 @@ if(isset($loginMsg))
  </div>
      
 </form>
+</body>
+</html>
