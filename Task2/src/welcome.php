@@ -34,7 +34,108 @@
 <?php
    echo $row['username'];
  }
+
+ if(isset($_POST['add'])) //button name "btn_register"
+{
+ $name = strip_tags($_POST['name']); 
+ $author  = strip_tags($_POST['author']);  
+ $prep = strip_tags($_POST['prep']);
+ $cook = strip_tags($_POST['cook']); 
+ $serves  = strip_tags($_POST['serves']);  
+ $ratings = strip_tags($_POST['ratings']);
+ $foodType = strip_tags($_POST['foodType']); 
+ $difficulty  = strip_tags($_POST['difficulty']);  
+ $desc = strip_tags($_POST['desc']);
+ $ingredients = strip_tags($_POST['ingredients']); 
+ $kcal  = strip_tags($_POST['kcal']);  
+ $fat = strip_tags($_POST['fat']); 
+ $saturates = strip_tags($_POST['saturates']);
+ $carbs = strip_tags($_POST['carbs']); 
+ $sugars  = strip_tags($_POST['sugars']);  
+ $fibre = strip_tags($_POST['fibre']);
+ $protein = strip_tags($_POST['protein']); 
+ $salt  = strip_tags($_POST['salt']);  
+ $method = strip_tags($_POST['method']); 
+  
+ if(empty($name) OR empty($author) OR empty($prep) OR empty($cook) OR empty($serves) OR empty($ratings) OR 
+ empty($foodType) OR empty($difficulty) OR empty($desc) OR empty($ingredients) OR empty($kcal) OR 
+ empty($fat) OR empty($saturates) OR empty($carbs) OR empty($sugars) OR empty($fibre) OR empty($protein)
+ OR empty($salt) OR empty($method) ){
+  $errorMsg="Please enter All Fields"; //check username textbox not empty 
+ }
+ 
+ else
+ { 
+  try
+  { 
+   $query=$db->prepare("SELECT name FROM Recipes 
+          WHERE name=?"); // sql select query
+   
+   $query->execute(array($name)); //execute query 
+   $row=$query->fetch(PDO::FETCH_ASSOC); 
+   
+   if($row["name"]==$name){
+    $errorMsg="Sorry Recipe Name already exists"; //check condition username already exists 
+   }
+   
+   else if(!isset($errorMsg)) //check no "$errorMsg" show then continue
+   {
+    //$new_password = password_hash($password, PASSWORD_DEFAULT); //encrypt password using password_hash()
+    
+    $insert_stmt=$db->prepare("INSERT INTO Recipes (name,author,prep,cook,serves,ratings,foodType,difficulty,description,ingredients,kcal,fat,saturates,carbs,sugars,fibre,protein,salt,method) VALUES
+                (:rname,:author,:prep,:cook,:serves,:ratings,:foodType,:difficulty,:desc,:ingredients,:kcal,:fat,:saturates,:carbs,:sugars,:fibre,:protein,:salt,:method)");   //sql insert query     
+    
+    if($insert_stmt->execute(array( ':rname' =>$name, 
+                                    ':author'=>$author, 
+                                    ':prep'=>$prep,
+                                    ':cook' =>$cook, 
+                                    ':serves'=>$serves, 
+                                    ':ratings'=>$ratings,
+                                    ':foodType' =>$foodType, 
+                                    ':difficulty'=>$difficulty, 
+                                    ':desc'=>$desc,
+                                    ':ingredients' =>$ingredients, 
+                                    ':kcal'=>$kcal, 
+                                    ':fat'=>$fat,
+                                    ':saturates' =>$saturates, 
+                                    ':carbs'=>$carbs, 
+                                    ':sugars'=>$sugars,
+                                    ':fibre' =>$fibre, 
+                                    ':protein'=>$protein, 
+                                    ':salt'=>$salt,
+                                    ':method' =>$method))){
+             
+     $addmMsg="Added Successfully....."; //execute query success message
+    }
+   }
+  }
+  catch(PDOException $e)
+  {
+   echo $e->getMessage();
+  }
+ }
+}
+?>
+<?php
+if(isset($errorMsg))
+{
+ 
  ?>
+  <div class="alert alert-danger">
+   <strong>WRONG ! <?php echo $errorMsg; ?></strong>
+  </div>
+    <?php
+
+}
+if(isset($addmMsg))
+{
+?>
+ <div class="alert alert-success">
+  <strong><?php echo $addmMsg; ?></strong>
+ </div>
+<?php
+}
+?> 
             <a href="logout.php">Logout</a>
         </header>
     
