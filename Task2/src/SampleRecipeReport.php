@@ -63,11 +63,6 @@
 
 $recipeID = $_GET['recipe'];
 
-
-foreach ($recipeID as $recipe){ 
-    echo $recipe."<br />";
-}
-
 ?>
    <?php
            try
@@ -125,7 +120,7 @@ foreach ($recipeID as $recipe){
        ?>
        </tbody>
        </table>
-       <button type="submit"  value="submit">Create Recipe Report</button>
+
    <?php    
        
        
