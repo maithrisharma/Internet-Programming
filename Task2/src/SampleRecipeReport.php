@@ -92,7 +92,7 @@ foreach ($recipeID as $recipe){
      }
    }
    </script>
-   <form action="sampleRecipeReport.php" method="GET">
+
        <table>
        <thead class='tbl-header'>
          <tr>

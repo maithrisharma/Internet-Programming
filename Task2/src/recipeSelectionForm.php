@@ -116,6 +116,7 @@ function toggle(source) {
     </tbody>
     </table>
     <button type="submit"  value="submit">Create Recipe Report</button>
+</form>
 <?php    
     
     
