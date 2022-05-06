@@ -1,23 +1,84 @@
-body {
+table{
+    width: 90%;
+  margin: 50px;
+ border-spacing: 0px;
+  background-color:#372d2d;
+}
+  /* .tbl-header{
+    
+   } */
+  .tbl-content{
+  
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  th{
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase
+ 
+  }
+  td{
+    padding: 15px;
+    text-align: center;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    border: solid 1px rgba(255,255,255,0.1);
+  }
+  body {
     display: grid;
     grid-template-columns: 15% 85%;
     grid-template-rows: auto;
     grid-template-areas: "header header"
-                            "nav main"
-                            "footer footer";
+"nav main" "footer footer";
+/* height: 100vh; */}
+
+header {
+	background: #707070;
+	grid-area: header;
 }
+
+nav {
+	background: #C9BFBF;
+	grid-area: nav; 
+}
+
+h4{
+  text-align: center;
+}
+
+aside {
+	background: #C9C9C9;
+	grid-area: aside; 
+}
+
+footer {
+	/* position: fixed; */  /* bottom: 0%; */background: #707070;
+	grid-area: footer;
+/* width: 100%; */}
+
+header, nav, section, aside, footer {
+	padding: 5px;
+}
+
 
 header {
     background-color: #555;
     color: white;
     padding: 10px;
     grid-area: header;
-}
+height: fit-content;}
 
 nav {
     background-color: whitesmoke;
     color: black;
-    grid-area: nav;
+    grid-area: nav; 
 }
 
 nav > ul {
@@ -50,52 +111,7 @@ main {
     margin-left: 1em;
     padding-left: 1em;
     grid-area: main;
-}
+/* height: inherit; */}
 
-footer {
-    padding-top: 2em;
-    background-color: #555;
-    color: white;
-    grid-area: footer;
-}
 
-.note {
-    color: red;
-    font-size: 12pt;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 1em;
-}
 
-.blueNote {
-    color: blue;
-    font-size: 12pt;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 1em;
-    font-weight: bold;
-}
-
-.sketch img {
-    width: 60%;
-    height: auto;
-}
-
-.addmore > input {
-    display:block;
-    float: left;
-    margin: 0 2em 2em 2em;
-    padding: 0.5em 5em;
-    text-decoration: none;
-    background-color: whitesmoke;
-    color:#555;
-}
-
-/* Change the link color on hover */
-.addmore > input:hover {
-    display:block;
-    float: left;
-    margin: 0 2em 2em 2em;
-    padding: 0.5em 5em;
-    text-decoration: none;
-    background-color: #555;
-    color: whitesmoke;
-}

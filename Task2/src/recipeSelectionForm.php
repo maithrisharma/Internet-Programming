@@ -74,10 +74,18 @@ if(isset($errorMsg))
    else //check no "$errorMsg" show then continue
    {
      ?>
-
+    <script language="JavaScript">
+function toggle(source) {
+  checkboxes = document.getElementsByName('foo');
+  for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = source.checked;
+  }
+}
+</script>
     <table>
     <thead class='tbl-header'>
       <tr>
+          <th><input type="checkbox" onClick="toggle(this)" /></th>
         <th>No.</th>
         <th>Name</th>
         <th>Author</th>
@@ -92,6 +100,7 @@ if(isset($errorMsg))
       ?>
       <tr>
 <?php
+        echo '<td><input type="checkbox" name="foo" value="'. $row['id'] .'"></td>';
       echo '<td>' . $row['id'] . '</td>';
       echo '<td>' . $row['name'] . '</td>';
       echo '<td>' . $row['author'] . '</td>';
