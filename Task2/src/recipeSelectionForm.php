@@ -76,12 +76,13 @@ if(isset($errorMsg))
      ?>
     <script language="JavaScript">
 function toggle(source) {
-  checkboxes = document.getElementsByName('foo');
+  checkboxes = document.getElementsByName('recipe[]');
   for(var i=0, n=checkboxes.length;i<n;i++) {
     checkboxes[i].checked = source.checked;
   }
 }
 </script>
+<form action="sampleRecipeReport.php" method="GET">
     <table>
     <thead class='tbl-header'>
       <tr>
@@ -100,7 +101,7 @@ function toggle(source) {
       ?>
       <tr>
 <?php
-        echo '<td><input type="checkbox" name="foo" value="'. $row['id'] .'"></td>';
+        echo '<td><input type="checkbox" name="recipe[]" value="'. $row['id'] .'"></td>';
       echo '<td>' . $row['id'] . '</td>';
       echo '<td>' . $row['name'] . '</td>';
       echo '<td>' . $row['author'] . '</td>';
@@ -114,6 +115,7 @@ function toggle(source) {
     ?>
     </tbody>
     </table>
+    <button type="submit"  value="submit">Create Recipe Report</button>
 <?php    
     
     
