@@ -24,6 +24,7 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
@@ -81,9 +82,8 @@ if(isset($errorMsg))
         <th>No.</th>
         <th>Name</th>
         <th>Author</th>
-        <th>Prep</th>
-        <th>Cook</th>
         <th>More Details</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody>
@@ -95,10 +95,14 @@ if(isset($errorMsg))
       echo '<td>' . $row['id'] . '</td>';
       echo '<td>' . $row['name'] . '</td>';
       echo '<td>' . $row['author'] . '</td>';
-      echo '<td>' . $row['prep'] . '</td>';
-      echo '<td>' . $row['cook'] . '</td>';
-      echo '<td>More Details</td>';
-      ?>
+      echo '<td>Prep Time: ' . $row['prep'] . '<br>Cook Time: ' . $row['cook'] . '<br>Serves: ' . $row['serves']
+      . '<br>Ratings: ' . $row['ratings'] . '<br>Description: ' . $row['description'] . '<br><br>Ingredients: ' . 
+      $row['ingredients'] . '<br><br>Kcal: ' . $row['kcal'] . '&emsp;Fat: ' . $row['fat'] . '&emsp;Saturates: ' . $row['saturates'] . 
+      '&emsp;Carbs: ' . $row['carbs'] . '&emsp;Sugars: ' . $row['sugars'] . ' &emsp;Fibre: ' . $row['fibre'] . '&emsp;Protein: ' 
+      . $row['protein'] . '&emsp;Salts: ' . $row['salt'] . '<br><br>Method: ' . $row['method'] . '<br></td>';?>
+      <!-- echo '<td><i class="material-icons" onclick="">delete</i></td>'; -->
+      <td><a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger btn-sm">Delete</a> </td>
+
       </tr>
 <?php
     }
