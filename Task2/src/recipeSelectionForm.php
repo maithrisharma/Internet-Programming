@@ -76,20 +76,27 @@ if(isset($errorMsg))
      ?>
     <script language="JavaScript">
 function toggle(source) {
-  checkboxes = document.getElementsByName('recipe[]');
+    checkboxes = document.getElementsByName('recipe[]');
+
   for(var i=0, n=checkboxes.length;i<n;i++) {
     checkboxes[i].checked = source.checked;
   }
+  var checkboxes = $("input[type='checkbox']"),
+  submitButt = $("button[type='submit']");
+
+// checkboxes.click(function() {
+    submitButt.attr("disabled", !checkboxes.is(":checked"));
 }
 function myFunc(){
     console.log("Inside");
 var checkboxes = $("input[type='checkbox']"),
     submitButt = $("button[type='submit']");
 
-checkboxes.click(function() {
+// checkboxes.click(function() {
     submitButt.attr("disabled", !checkboxes.is(":checked"));
-});
+// });
 }
+//}
 </script>
 <form action="sampleRecipeReport.php" method="GET">
     <table>
