@@ -111,7 +111,46 @@ $recipeID = $_GET['recipe'];
        <canvas id="myChart" width="400" height="400"></canvas> 
        </div>
        <script>
-
+           const ctx = document.getElementById('myChart').getContext('2d');
+console.log(ctx);
+const myChart = new Chart(ctx, {
+type: 'pie',
+data: {
+    labels: ['Fat', 'Saturates', 'Carbs', 'Sugars', 'Fibre', 'Protein', 'Salts'],
+    datasets: [{
+        label: '# g',
+        data: [<?php echo $row['fat']?>, <?php echo $row['saturates']?>, <?php echo $row['carbs']?>, <?php echo $row['sugars']?>, <?php echo $row['fibre']?>, <?php echo $row['protein']?>, <?php echo $row['salt']?>],
+        backgroundColor: [
+            'rgba(0, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(0, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)',
+            'rgba(152, 159, 64, 0.2)'
+        ],
+        borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)',
+            'rgba(152, 159, 64, 1)'
+        ],
+        borderWidth: 1
+    }]
+},
+options: {
+    // resnponsive:true;
+    // maintainAspectRatio: false;
+    scales: {
+        y: {
+            beginAtZero: true
+        }
+    }
+}
+});
        </script>
 <?php       
 }

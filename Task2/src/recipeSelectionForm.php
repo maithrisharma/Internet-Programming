@@ -120,9 +120,9 @@ var checkboxes = $("input[type='checkbox']"),
         echo '<td>' . $row['author'] . '</td>';
         echo '<td>Prep Time: ' . $row['prep'] . '<br>Cook Time: ' . $row['cook'] . '<br>Serves: ' . $row['serves']
         . '<br>Ratings: ' . $row['ratings'] . '<br>Description: ' . $row['description'] . '<br><br>Ingredients: ' . 
-        $row['ingredients'] . '<br><br>Kcal: ' . $row['kcal'] . '&emsp;Fat: ' . $row['fat'] . '&emsp;Saturates: ' . $row['saturates'] . 
-        '&emsp;Carbs: ' . $row['carbs'] . '&emsp;Sugars: ' . $row['sugars'] . ' &emsp;Fibre: ' . $row['fibre'] . '&emsp;Protein: ' 
-        . $row['protein'] . '&emsp;Salts: ' . $row['salt'] . '<br><br>Method: ' . $row['method'] . '<br></td>';?>
+        $row['ingredients'] . '<br><br>Kcal: ' . $row['kcal'] . '&emsp;Fat: ' . $row['fat'] . 'g&emsp;Saturates: ' . $row['saturates'] . 
+        'g&emsp;Carbs: ' . $row['carbs'] . 'g&emsp;Sugars: ' . $row['sugars'] . 'g&emsp;Fibre: ' . $row['fibre'] . 'g&emsp;Protein: ' 
+        . $row['protein'] . 'g&emsp;Salts: ' . $row['salt'] . 'g<br><br>Method: ' . $row['method'] . '<br></td>';?>
         <!-- echo '<td><i class="material-icons" onclick="">delete</i></td>'; -->
         <td><a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger btn-sm">Delete</a> </td>
       
