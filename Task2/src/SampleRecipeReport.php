@@ -80,10 +80,35 @@ $recipeID = $_GET['recipe'];
       
       else //check no "$errorMsg" show then continue
       {
-        $c=1;
+        echo "<script>console.log('" . count($results) . "' );</script>";
+        $c=1;?>
+        <script>  
+            var recipeLabels=[];
+            var kcal=[];
+            var fat=[];
+            var saturates=[];
+            var carbs=[];
+            var sugars=[];
+            var fibre=[];
+            var protein=[];
+            var salts=[];
+        </script>
+<?php
        foreach($results as $row){
 
          ?>
+         <script> 
+
+            recipeLabels.push("<?php echo 'Recipe' . $c?>");
+           kcal.push(<?php echo $row['kcal']?>);
+           fat.push(<?php echo $row['fat']?>);
+           saturates.push(<?php echo $row['saturates']?>);
+           carbs.push(<?php echo $row['carbs']?>);
+           sugars.push(<?php echo $row['sugars']?>);
+           fibre.push(<?php echo $row['fibre']?>);
+           protein.push(<?php echo $row['protein']?>);
+           salts.push(<?php echo $row['salt']?>);
+                   </script>
         <h4>Recipe <?php echo $c++ ?></h4>
         <table>
             <thead>
@@ -113,6 +138,7 @@ $recipeID = $_GET['recipe'];
 
        </div>
        <script>
+
            var ctx = document.getElementById('<?php echo $row['id']?>').getContext('2d');
 console.log(ctx);
 var myChart = new Chart(ctx, {
@@ -159,26 +185,50 @@ options: {
 <?php       
 }
        ?>
-    <canvas id="myChart" width="400" height="400"></canvas>
+    <canvas id="myChart" width="400" height="400" style="display:none;"></canvas>
     <script>
+        if(<?php echo count($results)?>>1){
+            document.getElementById("myChart").style.display="block";
         var ctx = document.getElementById("myChart").getContext("2d");
 
 var data = {
-  labels: ["Chocolate", "Vanilla", "Strawberry"],
+  labels: recipeLabels,
   datasets: [{
-    label: "Blue",
+    label: "Kcal",
     backgroundColor: "blue",
-    data: [3, 7, 4]
+    data: kcal
   }, {
-    label: "Red",
+    label: "Fat",
     backgroundColor: "red",
-    data: [4, 3, 5]
+    data: fat
   }, {
-    label: "Green",
+    label: "Saturates",
     backgroundColor: "green",
-    data: [7, 2, 6]
-  }]
+    data: saturates
+  }, {
+    label: "Carbs",
+    backgroundColor: "blue",
+    data: carbs
+  }, {
+    label: "Sugars",
+    backgroundColor: "red",
+    data: sugars
+  }, {
+    label: "Fibre",
+    backgroundColor: "green",
+    data: fibre
+  }, {
+    label: "Protein",
+    backgroundColor: "blue",
+    data: protein
+  }, {
+    label: "Salts",
+    backgroundColor: "red",
+    data: salts
+  }
+]
 };
+console.log(data.datasets[0].data[0])
 
 var myBarChart = new Chart(ctx, {
   type: 'bar',
@@ -194,6 +244,7 @@ var myBarChart = new Chart(ctx, {
     }
   }
 });
+        }
 
     </script>
 
