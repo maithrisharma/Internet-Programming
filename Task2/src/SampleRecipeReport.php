@@ -107,13 +107,15 @@ $recipeID = $_GET['recipe'];
          
        </tbody>
        </table>
+       <h5>Nutritions:</h5>
        <div class="chartStyles">
-       <canvas id="myChart" width="400" height="400"></canvas> 
+       <canvas id="<?php echo $row['id']?>" width="400" height="400"></canvas> 
+
        </div>
        <script>
-           const ctx = document.getElementById('myChart').getContext('2d');
+           var ctx = document.getElementById('<?php echo $row['id']?>').getContext('2d');
 console.log(ctx);
-const myChart = new Chart(ctx, {
+var myChart = new Chart(ctx, {
 type: 'pie',
 data: {
     labels: ['Fat', 'Saturates', 'Carbs', 'Sugars', 'Fibre', 'Protein', 'Salts'],
@@ -152,10 +154,48 @@ options: {
 }
 });
        </script>
+              <p style="text-align:center;">Kcal:<?php echo $row['kcal']?></p>
+              <br>
 <?php       
 }
        ?>
+    <canvas id="myChart" width="400" height="400"></canvas>
+    <script>
+        var ctx = document.getElementById("myChart").getContext("2d");
 
+var data = {
+  labels: ["Chocolate", "Vanilla", "Strawberry"],
+  datasets: [{
+    label: "Blue",
+    backgroundColor: "blue",
+    data: [3, 7, 4]
+  }, {
+    label: "Red",
+    backgroundColor: "red",
+    data: [4, 3, 5]
+  }, {
+    label: "Green",
+    backgroundColor: "green",
+    data: [7, 2, 6]
+  }]
+};
+
+var myBarChart = new Chart(ctx, {
+  type: 'bar',
+  data: data,
+  options: {
+    barValueSpacing: 20,
+    scales: {
+      yAxes: [{
+        ticks: {
+          min: 0,
+        }
+      }]
+    }
+  }
+});
+
+    </script>
 
    <?php    
        
