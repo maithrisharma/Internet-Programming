@@ -62,7 +62,7 @@ if(isset($errorMsg))
 <?php
         try
   { 
-   $query=$db->prepare("SELECT * FROM Recipes"); // sql select query
+   $query=$db->prepare("SELECT * FROM Recipes ORDER BY name"); // sql select query
    
    $query->execute(); //execute query 
    $results=$query->fetchAll(); 
@@ -87,12 +87,10 @@ function toggle(source) {
     <thead class='tbl-header'>
       <tr>
           <th><input type="checkbox" onClick="toggle(this)" /></th>
-        <th>No.</th>
         <th>Name</th>
         <th>Author</th>
-        <th>Prep</th>
-        <th>Cook</th>
         <th>More Details</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody>
@@ -102,13 +100,16 @@ function toggle(source) {
       <tr>
 <?php
         echo '<td><input type="checkbox" name="recipe[]" value="'. $row['id'] .'"></td>';
-      echo '<td>' . $row['id'] . '</td>';
-      echo '<td>' . $row['name'] . '</td>';
-      echo '<td>' . $row['author'] . '</td>';
-      echo '<td>' . $row['prep'] . '</td>';
-      echo '<td>' . $row['cook'] . '</td>';
-      echo '<td>More Details</td>';
-      ?>
+        echo '<td>' . $row['name'] . '</td>';
+        echo '<td>' . $row['author'] . '</td>';
+        echo '<td>Prep Time: ' . $row['prep'] . '<br>Cook Time: ' . $row['cook'] . '<br>Serves: ' . $row['serves']
+        . '<br>Ratings: ' . $row['ratings'] . '<br>Description: ' . $row['description'] . '<br><br>Ingredients: ' . 
+        $row['ingredients'] . '<br><br>Kcal: ' . $row['kcal'] . '&emsp;Fat: ' . $row['fat'] . '&emsp;Saturates: ' . $row['saturates'] . 
+        '&emsp;Carbs: ' . $row['carbs'] . '&emsp;Sugars: ' . $row['sugars'] . ' &emsp;Fibre: ' . $row['fibre'] . '&emsp;Protein: ' 
+        . $row['protein'] . '&emsp;Salts: ' . $row['salt'] . '<br><br>Method: ' . $row['method'] . '<br></td>';?>
+        <!-- echo '<td><i class="material-icons" onclick="">delete</i></td>'; -->
+        <td><a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger btn-sm">Delete</a> </td>
+      
       </tr>
 <?php
     }

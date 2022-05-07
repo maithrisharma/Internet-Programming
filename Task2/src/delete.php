@@ -12,7 +12,7 @@ if (isset($_GET['id'])){
     $delete= $db->prepare("DELETE FROM Recipes WHERE id=$ID LIMIT 1");
     $delete->execute();
     if ($delete){
-        echo '<script>alert("Record deleted successfully !")</script>';
+        echo '<script>alert("Recipe deleted successfully !")</script>';
         echo '<script>window.location.href="welcome.php";</script>';
     }
 }
