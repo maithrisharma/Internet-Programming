@@ -78,48 +78,38 @@ $recipeID = $_GET['recipe'];
       
       else //check no "$errorMsg" show then continue
       {
-        ?>
-       <script language="JavaScript">
-   function toggle(source) {
-     checkboxes = document.getElementsByName('recipe[]');
-     for(var i=0, n=checkboxes.length;i<n;i++) {
-       checkboxes[i].checked = source.checked;
-     }
-   }
-   </script>
-
-       <table>
-       <thead class='tbl-header'>
-         <tr>
-             
-           <th>No.</th>
-           <th>Name</th>
-           <th>Author</th>
-           <th>Prep</th>
-           <th>Cook</th>
-           <th>More Details</th>
-         </tr>
-       </thead>
-       <tbody>
-       <?php
+        $c=1;
        foreach($results as $row){
+
          ?>
-         <tr>
-   <?php
-           
-         echo '<td>' . $row['id'] . '</td>';
+        <h4>Recipe <?php echo $c++ ?></h4>
+        <table>
+            <thead>
+            <tr>
+          
+        <th>Name</th>
+        <th>Author</th>
+        <th>More Details</th>
+      </tr>
+            </thead>
+            <tbody>
+                <tr>
+<?php  
          echo '<td>' . $row['name'] . '</td>';
          echo '<td>' . $row['author'] . '</td>';
-         echo '<td>' . $row['prep'] . '</td>';
-         echo '<td>' . $row['cook'] . '</td>';
-         echo '<td>More Details</td>';
-         ?>
+
+         echo '<td>Prep Time: ' . $row['prep'] . '<br>Cook Time: ' . $row['cook'] . '<br>Serves: ' . $row['serves']
+         . '<br>Ratings: ' . $row['ratings'] . '<br>Description: ' . $row['description'] . '<br><br>Ingredients: ' . 
+         $row['ingredients'] . '<br><br>Method: ' . $row['method'] . '<br></td>';?>
          </tr>
-   <?php
-       }
-       ?>
+         
        </tbody>
        </table>
+         
+<?php       
+}
+       ?>
+
 
    <?php    
        

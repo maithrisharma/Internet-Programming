@@ -81,6 +81,15 @@ function toggle(source) {
     checkboxes[i].checked = source.checked;
   }
 }
+function myFunc(){
+    console.log("Inside");
+var checkboxes = $("input[type='checkbox']"),
+    submitButt = $("button[type='submit']");
+
+checkboxes.click(function() {
+    submitButt.attr("disabled", !checkboxes.is(":checked"));
+});
+}
 </script>
 <form action="sampleRecipeReport.php" method="GET">
     <table>
@@ -99,7 +108,7 @@ function toggle(source) {
       ?>
       <tr>
 <?php
-        echo '<td><input type="checkbox" name="recipe[]" value="'. $row['id'] .'"></td>';
+        echo '<td><input type="checkbox" onchange="myFunc()" name="recipe[]" value="'. $row['id'] .'"></td>';
         echo '<td>' . $row['name'] . '</td>';
         echo '<td>' . $row['author'] . '</td>';
         echo '<td>Prep Time: ' . $row['prep'] . '<br>Cook Time: ' . $row['cook'] . '<br>Serves: ' . $row['serves']
@@ -116,7 +125,7 @@ function toggle(source) {
     ?>
     </tbody>
     </table>
-    <button type="submit"  value="submit">Create Recipe Report</button>
+    <button type="submit"  value="submit" disabled>Create Recipe Report</button>
 </form>
 <?php    
     
