@@ -220,43 +220,43 @@ if(isset($addmMsg))
       <div class="form-group">
         <label class="col-sm-3 control-label">Fat</label>
         <div class="col-sm-6">
-          <input type="text" name="fat" class="form-control" placeholder="Enter fat" />
+          <input type="number" step=0.01 name="fat" class="form-control" placeholder="Enter fat" />
         </div>
       </div>
       <div class="form-group">
         <label class="col-sm-3 control-label">Saturates</label>
         <div class="col-sm-6">
-          <input type="text" name="saturates" class="form-control" placeholder="Enter Saturates" />
+          <input type="number" step=0.01 name="saturates" class="form-control" placeholder="Enter Saturates" />
         </div>
       </div>
       <div class="form-group">
         <label class="col-sm-3 control-label">Carbs</label>
         <div class="col-sm-6">
-          <input type="text" name="carbs" class="form-control" placeholder="Enter Carbs" />
+          <input type="number" step=0.01 name="carbs" class="form-control" placeholder="Enter Carbs" />
         </div>
       </div>
       <div class="form-group">
         <label class="col-sm-3 control-label">Sugars</label>
         <div class="col-sm-6">
-          <input type="text" name="sugars" class="form-control" placeholder="Enter Sugars" />
+          <input type="number" step=0.01 name="sugars" class="form-control" placeholder="Enter Sugars" />
         </div>
       </div>
       <div class="form-group">
         <label class="col-sm-3 control-label">Fibre</label>
         <div class="col-sm-6">
-          <input type="text" name="fibre" class="form-control" placeholder="Enter Fibre" />
+          <input type="number" step=0.01 name="fibre" class="form-control" placeholder="Enter Fibre" />
         </div>
       </div>
       <div class="form-group">
         <label class="col-sm-3 control-label">Protein</label>
         <div class="col-sm-6">
-          <input type="text" name="protein" class="form-control" placeholder="Enter Protein" />
+          <input type="number" step=0.01 name="protein" class="form-control" placeholder="Enter Protein" />
         </div>
       </div>
       <div class="form-group">
         <label class="col-sm-3 control-label">Salt</label>
         <div class="col-sm-6">
-          <input type="text" name="salt" class="form-control" placeholder="Enter Salt" />
+          <input type="number" step=0.01 name="salt" class="form-control" placeholder="Enter Salt" />
         </div>
       </div>
       <div class="form-group">

@@ -205,31 +205,31 @@ var data = {
     data: kcal
   }, {
     label: "Fat",
-    backgroundColor: "red",
+    backgroundColor: 'rgba(0, 99, 132, 1)',
     data: fat
   }, {
     label: "Saturates",
-    backgroundColor: "green",
+    backgroundColor: 'rgba(54, 162, 235, 1)',
     data: saturates
   }, {
     label: "Carbs",
-    backgroundColor: "blue",
+    backgroundColor: 'rgba(0, 206, 86, 1)',
     data: carbs
   }, {
     label: "Sugars",
-    backgroundColor: "red",
+    backgroundColor: 'rgba(75, 192, 192, 1)',
     data: sugars
   }, {
     label: "Fibre",
-    backgroundColor: "green",
+    backgroundColor: 'rgba(153, 102, 255, 1)',
     data: fibre
   }, {
     label: "Protein",
-    backgroundColor: "blue",
+    backgroundColor: 'rgba(255, 159, 64, 1)',
     data: protein
   }, {
     label: "Salts",
-    backgroundColor: "red",
+    backgroundColor: 'rgba(152, 159, 64, 1)',
     data: salts
   }
 ]
@@ -243,7 +243,8 @@ var myBarChart = new Chart(ctx, {
     scales: {
       yAxes: [{
         ticks: {
-          min: 0,
+          stepSize: 50,
+          min: 0
         }
       }]
     }
