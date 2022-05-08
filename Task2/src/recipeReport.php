@@ -64,7 +64,7 @@
            <?php
 
 $recipeID = $_GET['recipeId'];
-echo "<script>Console.log('$recipeID');</script>";
+
 
 ?>
    <?php
@@ -81,7 +81,6 @@ echo "<script>Console.log('$recipeID');</script>";
       
       else //check no "$errorMsg" show then continue
       {
-        echo "<script>console.log('" . count($results) . "' );</script>";
         ?>
         <script>  
             var recipeLabels=[];
@@ -95,6 +94,7 @@ echo "<script>Console.log('$recipeID');</script>";
             var salts=[];
         </script>
 <?php
+      $c=1;
        foreach($results as $row){
 
          ?>
@@ -141,7 +141,7 @@ echo "<script>Console.log('$recipeID');</script>";
        <script>
 
            var ctx = document.getElementById('<?php echo $row['id']?>').getContext('2d');
-console.log(ctx);
+
 var myChart = new Chart(ctx, {
 type: 'pie',
 data: {
@@ -234,7 +234,6 @@ var data = {
   }
 ]
 };
-console.log(data.datasets[0].data[0])
 
 var myBarChart = new Chart(ctx, {
   type: 'bar',
