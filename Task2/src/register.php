@@ -4,9 +4,9 @@ require_once "connection.php";
 
 if(isset($_POST['btn_register'])) //button name "btn_register"
 {
- $username = strip_tags($_POST['txt_username']); //textbox name "txt_email"
- $email  = strip_tags($_POST['txt_email']);  //textbox name "txt_email"
- $password = strip_tags($_POST['txt_password']); //textbox name "txt_password"
+ $username = strip_tags($_POST['username']); //textbox name "txt_email"
+ $email  = strip_tags($_POST['email']);  //textbox name "txt_email"
+ $password = strip_tags($_POST['password']); //textbox name "txt_password"
   
  if(empty($username)){
   $errorMsg[]="Please enter username"; //check username textbox not empty 
@@ -90,26 +90,28 @@ if(isset($registerMsg))
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <br>
+    <div class="container">
 <form method="post" class="form-horizontal">
         
  <div class="form-group">
  <label class="col-sm-3 control-label">Username</label>
  <div class="col-sm-6">
- <input type="text" name="txt_username" class="form-control" placeholder="enter username" />
+ <input type="text" name="username" class="form-control" placeholder="enter username" />
  </div>
  </div>
     
  <div class="form-group">
  <label class="col-sm-3 control-label">Email</label>
  <div class="col-sm-6">
- <input type="text" name="txt_email" class="form-control" placeholder="enter email" />
+ <input type="text" name="email" class="form-control" placeholder="enter email" />
  </div>
  </div>
      
  <div class="form-group">
  <label class="col-sm-3 control-label">Password</label>
  <div class="col-sm-6">
- <input type="password" name="txt_password" class="form-control" placeholder="enter passowrd" />
+ <input type="password" name="password" class="form-control" placeholder="enter passowrd" />
  </div>
  </div>
      
@@ -126,5 +128,6 @@ if(isset($registerMsg))
  </div>
      
 </form>
+</div>
 </body>
 </html>

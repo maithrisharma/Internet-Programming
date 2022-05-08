@@ -13,7 +13,7 @@ if (isset($_GET['id'])){
     $delete->execute();
     if ($delete){
         echo '<script>alert("Recipe deleted successfully !")</script>';
-        echo '<script>window.location.href="welcome.php";</script>';
+        echo '<script>window.location.href="home.php";</script>';
     }
 }
 ?>

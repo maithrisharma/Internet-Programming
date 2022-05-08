@@ -31,7 +31,7 @@
      </head>
      <body>
      <header>
-               <a href="welcome.php"><h3>CSYM019 - BBC GOOD FOOD RECIPES</h3></a>
+               <a class="home" href="home.php"><h3>CSYM019 - BBC GOOD FOOD RECIPES</h3></a>
                Welcome,
    <?php
       echo $row['username'];
@@ -51,7 +51,7 @@
    
    ?>
    
-               <a href="logout.php">Logout</a>
+               <a class="logout" href="logout.php">Logout</a>
            </header>
        
     <nav>
@@ -82,7 +82,7 @@ echo "<script>Console.log('$recipeID');</script>";
       else //check no "$errorMsg" show then continue
       {
         echo "<script>console.log('" . count($results) . "' );</script>";
-        $c=1;?>
+        ?>
         <script>  
             var recipeLabels=[];
             var kcal=[];
@@ -100,7 +100,7 @@ echo "<script>Console.log('$recipeID');</script>";
          ?>
          <script> 
 
-            recipeLabels.push("<?php echo 'Recipe' . $c?>");
+            recipeLabels.push("<?php echo $row['name']?>");
            kcal.push(<?php echo $row['kcal']?>);
            fat.push(<?php echo $row['fat']?>);
            saturates.push(<?php echo $row['saturates']?>);
@@ -188,11 +188,13 @@ options: {
        ?>
        
            <h3>Bar chart for Nutritions</h3>
-    <canvas id="myChart" width="400" height="400" style="display:none;"></canvas>
+    <canvas id="myChart" style="display:none;"></canvas>
 
     <script>
         if(<?php echo count($results)?>>1){
-            document.getElementById("myChart").style.display="block";
+            var canvasElement= document.getElementById("myChart").style.display="block";
+            canvasElement.width=300;
+            canvasElement.height=300;
         var ctx = document.getElementById("myChart").getContext("2d");
 
 var data = {

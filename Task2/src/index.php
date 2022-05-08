@@ -6,7 +6,7 @@ session_start();
 
 if(isset($_SESSION["user_login"])) //check condition session user login not direct back to index.php page
 {
- header("location: welcome.php");
+ header("location: home.php");
 }
 
 if(isset($_POST['login'])) //button name is "btn_login" 
@@ -40,7 +40,7 @@ if(isset($_POST['login'])) //button name is "btn_login"
      {
       $_SESSION["user_login"] = $row["user_id"]; //session name is "user_login"
       $loginMsg = "Successfully Login...";  //user login success message
-      header("refresh:2; welcome.php");   //refresh 2 second after redirect to "welcome.php" page
+      header("refresh:2; home.php");   //refresh 2 second after redirect to "welcome.php" page
      }
      else
      {
@@ -93,6 +93,8 @@ if(isset($loginMsg))
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body> 
+    <br>
+    <div class="container">
 <form method="post" class="form-horizontal">
      
  <div class="form-group">
@@ -122,5 +124,6 @@ if(isset($loginMsg))
  </div>
      
 </form>
+</div>
 </body>
 </html>

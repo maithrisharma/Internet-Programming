@@ -29,7 +29,7 @@
   </head>
   <body>
   <header>
-            <a href="welcome.php"><h3>CSYM019 - BBC GOOD FOOD RECIPES</h3></a>
+            <a class="home" href="home.php"><h3>CSYM019 - BBC GOOD FOOD RECIPES</h3></a>
             Welcome,
 <?php
    echo $row['username'];
@@ -49,7 +49,7 @@ if(isset($errorMsg))
 
 ?>
 
-            <a href="logout.php">Logout</a>
+            <a class="logout" href="logout.php">Logout</a>
         </header>
     
  <nav>
@@ -98,7 +98,8 @@ var checkboxes = $("input[type='checkbox']"),
 }
 //}
 </script>
-<form action="sampleRecipeReport.php" method="GET">
+<h1 class="titles">Recipes Selection</h1>
+<form action="recipeReport.php" method="GET">
     <table>
     <thead class='tbl-header'>
       <tr>
@@ -132,8 +133,9 @@ var checkboxes = $("input[type='checkbox']"),
     ?>
     </tbody>
     </table>
-    <button type="submit"  value="submit" disabled>Create Recipe Report</button>
+    <button class="btn btn-primary create" type="submit"  value="submit" disabled>Create Recipe Report</button>
 </form>
+<br>
 <?php    
     
     

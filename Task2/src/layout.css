@@ -2,7 +2,19 @@
   height: 250px;
   width: 250px;
 /* float: right; */text-align: center;margin-left: 37%;}
-
+.titles{
+  text-align: center;
+}
+.logout{
+  float:right;
+  color:red;
+}
+.home{
+  color:white;
+}
+.create{
+  margin-left:45px;
+}
 table{
     width: 90%;
   margin: 50px;

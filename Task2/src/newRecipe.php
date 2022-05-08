@@ -29,7 +29,7 @@
   </head>
   <body>
   <header>
-            <a href="welcome.php"><h3>CSYM019 - BBC GOOD FOOD RECIPES</h3></a>
+            <a class="home" href="home.php"><h3>CSYM019 - BBC GOOD FOOD RECIPES</h3></a>
             Welcome,
 <?php
    echo $row['username'];
@@ -136,7 +136,7 @@ if(isset($addmMsg))
 <?php
 }
 ?> 
-            <a href="logout.php">Logout</a>
+            <a class="logout" href="logout.php">Logout</a>
         </header>
     
  <nav>

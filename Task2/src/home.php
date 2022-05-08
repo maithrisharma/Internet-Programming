@@ -30,7 +30,7 @@
   </head>
   <body>
   <header>
-            <a href="welcome.php"><h3>CSYM019 - BBC GOOD FOOD RECIPES</h3></a>
+            <a class="home" href="home.php"><h3>CSYM019 - BBC GOOD FOOD RECIPES</h3></a>
             Welcome,
 <?php
    echo $row['username'];
@@ -50,7 +50,7 @@ if(isset($errorMsg))
 
 ?>
 
-            <a href="logout.php">Logout</a>
+            <a class="logout" href="logout.php">Logout</a>
         </header>
     
  <nav>
@@ -75,7 +75,7 @@ if(isset($errorMsg))
    else //check no "$errorMsg" show then continue
    {
      ?>
-
+    <h1 class="titles">Recipes</h1>
     <table>
     <thead class='tbl-header'>
       <tr>
@@ -88,11 +88,12 @@ if(isset($errorMsg))
     </thead>
     <tbody>
     <?php
+    $c=1;
     foreach($results as $row){
       ?>
       <tr>
 <?php
-      echo '<td>' . $row['id'] . '</td>';
+      echo '<td>' . $c++ . '</td>';
       echo '<td>' . $row['name'] . '</td>';
       echo '<td>' . $row['author'] . '</td>';
       echo '<td>Prep Time: ' . $row['prep'] . '<br>Cook Time: ' . $row['cook'] . '<br>Serves: ' . $row['serves']
