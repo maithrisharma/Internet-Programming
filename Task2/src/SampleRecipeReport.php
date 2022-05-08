@@ -63,7 +63,8 @@
            <main>
            <?php
 
-$recipeID = $_GET['recipe'];
+$recipeID = $_GET['recipeId'];
+echo "<script>Console.log('$recipeID');</script>";
 
 ?>
    <?php
@@ -185,7 +186,10 @@ options: {
 <?php       
 }
        ?>
+       
+           <h3>Bar chart for Nutritions</h3>
     <canvas id="myChart" width="400" height="400" style="display:none;"></canvas>
+
     <script>
         if(<?php echo count($results)?>>1){
             document.getElementById("myChart").style.display="block";
