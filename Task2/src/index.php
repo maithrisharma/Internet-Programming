@@ -9,11 +9,11 @@ if(isset($_SESSION["user_login"])) //check condition session user login not dire
  header("location: home.php");
 }
 
-if(isset($_POST['login'])) //button name is "btn_login" 
+if(isset($_POST['login']))
 {
- $username =strip_tags($_POST["username"]); //textbox name "txt_username_email"
- $email  =strip_tags($_POST["username"]); //textbox name "txt_username_email"
- $password =strip_tags($_POST["password"]);   //textbox name "txt_password"
+ $username =strip_tags($_POST["username"]); 
+ $email  =strip_tags($_POST["username"]); 
+ $password =strip_tags($_POST["password"]);   
   
  if(empty($username)){      
   $errorMsg[]="please enter username or email"; //check "username/email" textbox not empty 
@@ -36,11 +36,11 @@ if(isset($_POST['login'])) //button name is "btn_login"
    {
     if($username==$row["username"] OR $email==$row["email"]) //check condition user taypable "username or email" are both match from database "username or email" after continue
     {
-     if($password== $row["password"]) //check condition user taypable "password" are match from database "password" using password_verify() after continue
+     if($password== $row["password"]) 
      {
       $_SESSION["user_login"] = $row["user_id"]; //session name is "user_login"
       $loginMsg = "Successfully Login...";  //user login success message
-      header("refresh:1; home.php");   //refresh 2 second after redirect to "welcome.php" page
+      header("refresh:2; home.php");   
      }
      else
      {

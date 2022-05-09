@@ -2,12 +2,11 @@
 
 require_once "connection.php";
 
-if(isset($_POST['btn_register'])) //button name "btn_register"
+if(isset($_POST['btn_register'])) 
 {
- $username = strip_tags($_POST['username']); //textbox name "txt_email"
- $email  = strip_tags($_POST['email']);  //textbox name "txt_email"
- $password = strip_tags($_POST['password']); //textbox name "txt_password"
-  
+ $username = strip_tags($_POST['username']); 
+ $email  = strip_tags($_POST['email']); 
+ $password = strip_tags($_POST['password']); 
  if(empty($username)){
   $errorMsg[]="Please enter username"; //check username textbox not empty 
  }
@@ -38,7 +37,6 @@ if(isset($_POST['btn_register'])) //button name "btn_register"
    }
    else if(!isset($errorMsg)) //check no "$errorMsg" show then continue
    {
-    //$new_password = password_hash($password, PASSWORD_DEFAULT); //encrypt password using password_hash()
     
     $insert_stmt=$db->prepare("INSERT INTO users (username,email,password) VALUES
                 (:uname,:uemail,:upassword)");   //sql insert query     
