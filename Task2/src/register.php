@@ -58,27 +58,7 @@ if(isset($_POST['btn_register'])) //button name "btn_register"
  }
 }
 ?>
-<?php
-if(isset($errorMsg))
-{
- foreach($errorMsg as $error)
- {
- ?>
-  <div class="alert alert-danger">
-   <strong>WRONG ! <?php echo $error; ?></strong>
-  </div>
-    <?php
- }
-}
-if(isset($registerMsg))
-{
-?>
- <div class="alert alert-success">
-  <strong><?php echo $registerMsg; ?></strong>
- </div>
-<?php
-}
-?> 
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -126,6 +106,27 @@ if(isset($registerMsg))
  </div>
      
 </form>
+<?php
+if(isset($errorMsg))
+{
+ foreach($errorMsg as $error)
+ {
+ ?>
+  <div class="alert alert-danger">
+   <strong>WRONG ! <?php echo $error; ?></strong>
+  </div>
+    <?php
+ }
+}
+if(isset($registerMsg))
+{
+?>
+ <div class="alert alert-success">
+  <strong><?php echo $registerMsg; ?></strong>
+ </div>
+<?php
+}
+?> 
 </div>
 </body>
 </html>
