@@ -14,9 +14,6 @@ if(isset($_POST['btn_register'])) //button name "btn_register"
  else if(empty($email)){
   $errorMsg[]="Please enter email"; //check email textbox not empty 
  }
- else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-  $errorMsg[]="Please enter a valid email address"; //check proper email format 
- }
  else if(empty($password)){
   $errorMsg[]="Please enter password"; //check passowrd textbox not empty
  }
@@ -88,30 +85,31 @@ if(isset($registerMsg))
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="layout.css">
   </head>
   <body>
     <br>
-    <div class="container">
+    <div class="login">
 <form method="post" class="form-horizontal">
         
  <div class="form-group">
  <label class="col-sm-3 control-label">Username</label>
  <div class="col-sm-6">
- <input type="text" name="username" class="form-control" placeholder="enter username" />
+ <input type="text" name="username" class="form-control" placeholder="Enter username" />
  </div>
  </div>
     
  <div class="form-group">
  <label class="col-sm-3 control-label">Email</label>
  <div class="col-sm-6">
- <input type="text" name="email" class="form-control" placeholder="enter email" />
+ <input type="text" name="email" class="form-control" placeholder="Enter email" />
  </div>
  </div>
      
  <div class="form-group">
  <label class="col-sm-3 control-label">Password</label>
  <div class="col-sm-6">
- <input type="password" name="password" class="form-control" placeholder="enter passowrd" />
+ <input type="password" name="password" class="form-control" placeholder="Enter passowrd" />
  </div>
  </div>
      
