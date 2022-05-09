@@ -99,7 +99,7 @@ var checkboxes = $("input[type='checkbox']"),
 //}
 </script>
 <h1 class="titles">Recipes Selection</h1>
-<form action="recipeReport.php" method="GET">
+<form action="recipeReport.php" method="POST">
     <table>
     <thead class='tbl-header'>
       <tr>

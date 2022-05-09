@@ -63,7 +63,7 @@
            <main>
            <?php
 
-$recipeID = $_GET['recipeId'];
+$recipeID = $_POST['recipeId'];
 
 
 ?>
