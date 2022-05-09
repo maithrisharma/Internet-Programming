@@ -106,6 +106,9 @@
                                     ':method' =>$method))){
              
      $addmMsg="Added Successfully....."; //execute query success message
+     ?>
+     <script>setTimeout(function(){ window.location.href = "home.php"; },2000);</script>
+<?php     
     }
    }
   }

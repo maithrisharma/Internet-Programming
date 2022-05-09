@@ -187,11 +187,12 @@ options: {
 }
        ?>
        
-           <h3>Bar chart for Nutritions</h3>
+           <h3 id="bar" style="display:none;">Bar chart for Nutritions</h3>
     <canvas id="myChart" style="display:none;"></canvas>
 
     <script>
         if(<?php echo count($results)?>>1){
+            document.getElementById("bar").style.display="block";
             var canvasElement= document.getElementById("myChart").style.display="block";
             canvasElement.width=300;
             canvasElement.height=300;
