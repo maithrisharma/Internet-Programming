@@ -75,7 +75,7 @@ $recipeID = $_POST['recipeId'];
       $results=$query->fetchAll(); 
       
       if(empty($results)){
-       $errorMsg="Sorry No recipes Exists"; //check condition username already exists 
+       $errorMsg="Sorry No recipes Exists"; 
       }
       
       else //check no "$errorMsg" show then continue
