@@ -35,7 +35,7 @@
    echo $row['username'];
  }
 
- if(isset($_POST['add'])) //button name "btn_register"
+ if(isset($_POST['add'])) //button name "add"
 {
  $name = strip_tags($_POST['name']); 
  $author  = strip_tags($_POST['author']);  
@@ -61,7 +61,7 @@
  empty($foodType) OR empty($difficulty) OR empty($desc) OR empty($ingredients) OR empty($kcal) OR 
  empty($fat) OR empty($saturates) OR empty($carbs) OR empty($sugars) OR empty($fibre) OR empty($protein)
  OR empty($salt) OR empty($method) ){
-  $errorMsg="Please enter All Fields"; //check username textbox not empty 
+  $errorMsg="Please enter All Fields"; 
  }
  
  else
@@ -75,7 +75,7 @@
    $row=$query->fetch(PDO::FETCH_ASSOC); 
    
    if($row["name"]==$name){
-    $errorMsg="Sorry Recipe Name already exists"; //check condition username already exists 
+    $errorMsg="Sorry Recipe Name already exists"; //check condition recipe name already exists 
    }
    
    else if(!isset($errorMsg)) //check no "$errorMsg" show then continue
@@ -124,7 +124,7 @@ if(isset($errorMsg))
  
  ?>
   <div class="alert alert-danger">
-   <strong>WRONG ! <?php echo $errorMsg; ?></strong>
+   <strong><?php echo $errorMsg; ?></strong>
   </div>
     <?php
 
