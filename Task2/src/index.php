@@ -84,6 +84,7 @@ if(isset($_POST['login']))
  <input type="text" name="username" class="form-control" placeholder="Enter username or email" />
  </div>
  </div>
+ <br>
      
  <div class="form-group">
  <label class="col-sm-3 control-label">Password</label>
@@ -91,12 +92,14 @@ if(isset($_POST['login']))
  <input type="password" name="password" class="form-control" placeholder="Enter passowrd" />
  </div>
  </div>
+ <br>
     
  <div class="form-group">
  <div class="col-sm-offset-3 col-sm-9 m-t-15">
  <input type="submit" name="login" class="btn btn-success" value="Login">
  </div>
  </div>
+ <br>
     
  <div class="form-group">
  <div class="col-sm-offset-3 col-sm-9 m-t-15">

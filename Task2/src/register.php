@@ -76,6 +76,7 @@ if(isset($_POST['btn_register']))
  <input type="text" name="username" class="form-control" placeholder="Enter username" />
  </div>
  </div>
+ <br>
     
  <div class="form-group">
  <label class="col-sm-3 control-label">Email</label>
@@ -83,14 +84,14 @@ if(isset($_POST['btn_register']))
  <input type="text" name="email" class="form-control" placeholder="Enter email" />
  </div>
  </div>
-     
+     <br>
  <div class="form-group">
  <label class="col-sm-3 control-label">Password</label>
  <div class="col-sm-6">
  <input type="password" name="password" class="form-control" placeholder="Enter passowrd" />
  </div>
  </div>
-     
+    <br> 
  <div class="form-group">
  <div class="col-sm-offset-3 col-sm-9 m-t-15">
  <input type="submit"  name="btn_register" class="btn btn-primary " value="Register">
