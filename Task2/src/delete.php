@@ -2,7 +2,7 @@
 require_once 'connection.php';
 session_start();
 
- if(!isset($_SESSION['user_login'])) //check unauthorize user not access in "welcome.php" page
+ if(!isset($_SESSION['user_login'])) //check unauthorize user not access in "delete.php" page
  {
   header("location: index.php");
  }
