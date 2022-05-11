@@ -80,7 +80,6 @@
    
    else if(!isset($errorMsg)) //check no "$errorMsg" show then continue
    {
-    //$new_password = password_hash($password, PASSWORD_DEFAULT); //encrypt password using password_hash()
     
     $insert_stmt=$db->prepare("INSERT INTO Recipes (name,author,prep,cook,serves,ratings,foodType,difficulty,description,ingredients,kcal,fat,saturates,carbs,sugars,fibre,protein,salt,method) VALUES
                 (:rname,:author,:prep,:cook,:serves,:ratings,:foodType,:difficulty,:desc,:ingredients,:kcal,:fat,:saturates,:carbs,:sugars,:fibre,:protein,:salt,:method)");   //sql insert query     
