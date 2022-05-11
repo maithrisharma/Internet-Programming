@@ -64,29 +64,11 @@ table{
 "nav main" "footer footer";
 }
 
-header {
-	background: #707070;
-	grid-area: header;
-}
-
-nav {
-	background: #C9BFBF;
-	grid-area: nav; 
-}
 
 h4{
   text-align: center;
 }
 
-aside {
-	background: #C9C9C9;
-	grid-area: aside; 
-}
-
-footer {
-background: #707070;
-	grid-area: footer;
-}
 
 header, nav, section, aside, footer {
 	padding: 5px;
@@ -136,6 +118,11 @@ main {
     padding-left: 1em;
     grid-area: main;
 }
-
+footer {
+  padding-top: 2em;
+  background-color: #555;
+  color: white;
+  grid-area: footer;
+}
 
 
